@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alba Seguradora</title>
+
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor-150x150.png" sizes="150x150">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png">
+
+    
+       <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+    <!--choosen-->
+    <link href="Assets/plugins/chosen/chosen/chosen.css" rel="stylesheet">
+    <!--Sweetalert-->
+    <link rel="stylesheet" href="Assets/plugins/sweetalert2/sweetalert2.min.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Styleshhet - Main-->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="header_page_login bg-blue-middle">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-sm">
+                    <a href="index.html">
+                        <div class="brand_login">
+                            <img class="responsive_img" src="Assets/img/brand/Logo_Alba_header.png" alt="Logo Alba Seguradora" class="img-fluid">
+                        </div>
+                    </a> <!--link_brand-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nav-restrict">
+                            <div class=" dropdown">
+                                <a href="#" class="nav-link link-especial btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    <div class="brand-icon-profile">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="brand-data-profile">
+                                        <strong class=""> Corretor: &nbsp;</strong>
+                                         <span>Marcos</span>
+                                        <span class="ml-3 ">
+                                            <i class="fas fa-angle-down"> </i>
+                                        </span>
+                                    </div>
+                                    
+                                </a>
+                                <div class="dropdown-menu navbar-top-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="data-user">
+                                            <i class="fa fa-user fa-fw"></i> Usuário
+                                            <span class="pull-right ">Marcos</span>                                        
+                                        </div>
+                                    </a>                                    
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-wifi fa-fw"></i> I.P
+                                        <span class="pull-right">187.75.227.19</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-unlock-alt fa-fw"></i> Senha
+                                        <span class="pull-right">Alterar</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="fa fa-sign-out-alt fa-fw"></i> 
+                                        <span class="pull-right">Sair</span>
+                                    </a>
+                                </div><!--dropdown-menu-->
+                            </div><!--dropdown-->
+                        </div>
+                    </div>
+                </nav>
+            </div><!--Container-->
+        </div><!--header_page_login-->
+    </header> <!--header-->
+
+    <div class="wrapper">
+        <div class="sidebar bg-blue-dark" id="sidebar">
+            <ul class="sidebar-menu" id="sidebar_menu">
+                <li class="item-menu">
+                    <a href="index.html">
+                        <div class="icon-menu">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="title-menu">
+                            Página Inicial
+                        </div>
+                    </a>
+                    
+                </li>
+            </ul>
+            <div class="content-help bg-green">
+                <h3>Precisa de ajuda?</h3>
+                <p>
+                    Entre em contato com <br/> a nossa equipe de atendimento <br/>  no telefone <a href="tel:1130645693">(11) 3064-5693</a> ou no <br/>e-mail:  <a href="mailto:atendimento@diretrixon.com.br">atendimento@diretrixon.com.br</a>  
+                </p>
+            </div>
+            <div class="sidebar-control" id="sidebar_control">
+                <div class="button-sidebar">
+                    <div class="icon-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-content bg-white">
+            <div class="main">
+                <div class="content-page">
+
+                    <div class="header-content-page">
+                        <a href="javascript: history.go(-1)" class="btn btn-rewind">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <div class="container-progressbar">
+                            <ul class="progressbar-step">
+                                <li class="active">Dados do Cliente</li>
+                                <li class="active"> Perfil do grupo</li>
+                                <li class="active">Coberturas e assistências</li>
+                                <li class="active">cotação</li>
+                                <li>Proposta</li>
+                            </ul><!---progressbar-step-->
+                        </div>   <!--container-progressbar-step-->
+                    </div><!--header-content-page-->
+
+                    <div class="title-content mb-2">
+                        <h2 >Dados adicionais da Proposta</h2>                       
+                    </div>
+                    <p class="mb-4"> Preencha os dados adicionais</p>
+
+                   
+
+                    <div class="card">
+                        <div class="card-body p-5 ph-n">
+                           
+
+                           <div class="mt-4 mb-4">
+                               
+                                <div class="card-title">
+                                    <h4 class="text-primary mb-4">Confirmação de endereço de cadastro</h4>
+    
+                                    <div class="form-description mb-4">
+                                        <p class="strong text-primary">Dados do estipulante</p>
+                                    </div>
+                                </div><!--card-title-->
+
+                                <div class="estipulante-conf mt-3">
+                                
+                                    <div class="row">
+                                        <div class="col-lg-4">
+    
+                                            <div class="form-group">
+                                                <label for="cnpjEstConf" class="control-label label-strong label-primary">CNPJ*</label>
+                                                <input type="text" disabled value="41.618.079/001-04"  id="cnpjEstConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="razaoSocConf" class="control-label label-strong label-primary">Razão Social</label>
+                                                <input type="text" value="XPTO LTDA" disabled id="razaoSocConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+    
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="segEstConf"   class="control-label label-strong label-primary">Segmento</label>
+                                                <input type="text" value="INDÚSTRIA" disabled id="segEstConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col--> 
+                                    </div><!--row-->   
+                                    
+                                    <div class="row mt-3">
+                                        <div class="col-lg-5">
+    
+                                            <div class="form-group">
+                                                <label for="endConf" class="control-label label-strong label-primary">Endereço</label>
+                                                <input type="text" disabled value="Rua João Martins"  id="endConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    
+                                        <div class="col-lg-2">
+                                            <div class="form-group">
+                                                <label for="nConf" class="control-label label-strong label-primary">Número</label>
+                                                <input type="text" value="10" disabled id="nConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+    
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="compConf"   class="control-label label-strong label-primary">Complemento</label>
+                                                <input type="text" value="INDÚSTRIA" disabled id="compConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    </div><!--row-->   
+
+                                    <div class="row mt-3">
+                                        <div class="col-lg-2">
+    
+                                            <div class="form-group">
+                                                <label for="ufConf" class="control-label label-strong label-primary">UF</label>
+                                                <input type="text" disabled value="SP"  id="ufConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="cityConf" class="control-label label-strong label-primary">Cidade</label>
+                                                <input type="text" value="São Paulo" disabled id="cityConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+    
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="cepConf"   class="control-label label-strong label-primary">CEP</label>
+                                                <input type="text" value="00000-000" disabled id="cepConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    </div><!--row-->  
+
+                                    <div class="row mt-3">
+                                        <div class="col-lg-3">
+    
+                                            <div class="form-group">
+                                                <label for="telConf" class="control-label label-strong label-primary">Celular</label>
+                                                <input type="text" disabled value="(11) 992332-3221"  id="telConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    
+                                        <div class="col-lg-5">
+                                            <div class="form-group">
+                                                <label for="emailcityConf" class="control-label label-strong label-primary">Email</label>
+                                                <input type="text" value="xpto@xptoltda.com.br" disabled id="emailcityConf" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                                                                    
+                                    </div><!--row--> 
+                                </div><!--estipulante-->
+
+                               
+                                <div class="estipulante-data-add">
+                                    <div class="card-title mt-4">
+                                        <h4 class="text-primary mb-4">O endereço de cadastro, é o mesmo endereço de correspondência?</h4>
+                                    </div>
+                                </div>
+
+                                <div class="option-container">
+                    
+                                    <div class="option-content"> 
+                                        <label for="data-yes" class="radio-control">
+                                            <input type="radio" value="data-yes" checked  name="cadEdit" id="data-yes">
+                                            <strong class="nowrap">Sim</strong>                                  
+                                            <span></span>
+                                        </label>  
+            
+                                        <label for="data-no" class="radio-control">
+                                            <input type="radio" value="data-no"  name="cadEdit" id="data-no">
+                                            <strong class="nowrap">Nao</strong>                                  
+                                            <span></span>
+                                        </label>  
+                                    </div>
+                                </div>
+
+                                <form action="#">
+                                    <div id="add-data" class="hide estipulante-data-add animate__animated mt-3">
+                                    
+                                        <div class="row">
+                                            <div class="col-lg-4">
+        
+                                                <div class="form-group">
+                                                    <label for="cnpjEstAdd" class="control-label label-strong label-primary">CNPJ*</label>
+                                                    <input type="text" required  id="cnpjEstAdd" class="form-control cnpj">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="razaoSocAdd" class="control-label label-strong label-primary">Razão Social</label>
+                                                    <input type="text"  required id="razaoSocAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="segEstAdd"   class="control-label label-strong label-primary">Segmento</label>
+                                                    <input type="text" required id="segEstAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col--> 
+                                        </div><!--row-->   
+                                        
+                                        <div class="row mt-3">
+                                            <div class="col-lg-5">
+        
+                                                <div class="form-group">
+                                                    <label for="endAdd" class="control-label label-strong label-primary">Endereço</label>
+                                                    <input type="text" required  id="endAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        
+                                            <div class="col-lg-2">
+                                                <div class="form-group">
+                                                    <label for="nAdd" class="control-label label-strong label-primary">Número</label>
+                                                    <input type="text" required id="nAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="compAdd"   class="control-label label-strong label-primary">Complemento</label>
+                                                    <input type="text"  id="compAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!--row-->   
+    
+                                        <div class="row mt-3">
+                                            <div class="col-lg-2">
+        
+                                                <div class="form-group">
+                                                    <label for="ufAdd" class="control-label label-strong label-primary">UF</label>
+                                                    <select name="" id="ufAdd" class="form-control">
+                                                        <option value=""></option>
+                                                        <option value="AC">AC</option>
+                                                        <option value="AL">AL</option>
+                                                        <option value="AP">AP</option>
+                                                        <option value="AM">AM</option>
+                                                        <option value="BA">BA</option>
+                                                        <option value="CE">CE</option>
+                                                        <option value="DF">DF</option>
+                                                        <option value="ES">ES</option>
+                                                        <option value="GO">GO</option>
+                                                        <option value="MA">MA</option>
+                                                        <option value="MS">MS</option>
+                                                        <option value="MT">MT</option>
+                                                        <option value="MG">MG</option>
+                                                        <option value="PA">PA</option>
+                                                        <option value="PB">PB</option>
+                                                        <option value="PR">PR</option>
+                                                        <option value="PE">PE</option>
+                                                        <option value="PI">PI</option>
+                                                        <option value="RJ">RJ</option>
+                                                        <option value="RN">RN</option>
+                                                        <option value="RS">RS</option>
+                                                        <option value="RO">RO</option>
+                                                        <option value="RR">RR</option>
+                                                        <option value="SC">SC</option>
+                                                        <option value="SP">SP</option>
+                                                        <option value="SE">SE</option>
+                                                        <option value="TO">TO</option>
+                                                    </select>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="cityAdd" class="control-label label-strong label-primary">Cidade</label>
+                                                    <input type="text" required id="cityAdd" class="form-control">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="cepAdd"   class="control-label label-strong label-primary">CEP</label>
+                                                    <input type="text" required id="cepAdd" class="form-control cep">
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        </div><!--row-->  
+    
+                                       
+                                        
+                                    </div> <!-- estipulante-data-add-->
+
+                                    <div class="row mt-5 ">
+                                        <div class="col-md-12 mb-2">
+                                            <h4 class="text-primary mb-4">Atualize seus contatos para receber informações importantes. </h4>
+                                        </div>
+                                        <div class="col-lg-3">
+    
+                                            <div class="form-group">
+                                                <label for="telAdd" class="control-label  label-strong label-primary">Celular</label>
+                                                <input type="text"  id="telAdd" required class="form-control celphones">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                    
+                                        <div class="col-lg-5">
+                                            <div class="form-group">
+                                                <label for="emailcityAdd" class="control-label label-strong label-primary">Email</label>
+                                                <input type="email" required id="emailcityAdd" class="form-control">
+                                                <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                            </div><!--form-group-->
+                                        </div><!--col-->
+                                                                                    
+                                    </div><!--row--> 
+
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="estipulante-data-add">
+                                                    <div class="card-title mt-4">
+                                                        <h4 class="text-primary mb-4">Dados de Cotação</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div><!-- row -->
+
+                                        <div class="row mt-3">
+                                                
+                                            <div class="col-md-4">
+                                                <label for="vlPremio" class="text-primary strong mt-2">
+                                                Valor do prêmio (R$):
+                                                </label>
+                                            </div><!--col-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input name="" id="vlPremio" value="1000000" disabled class="form-control money2"></input>
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                            <div class="col-sm-3">   
+                                                <div class="group-button">
+                                                    <button type="button" data-toggle="tooltip" title="editar" class="text-warning mr-2 js-edit">
+                                                            <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button type="reset" data-toggle="tooltip" title="cancelar" hidden class="text-danger mr-2 js-cancel">
+                                                        <i class="fas fa-times-circle fa-lg"></i>
+                                                    </button>
+                                                    <button type="button" data-toggle="tooltip" title="salvar" hidden class="text-success js-save">
+                                                        <i class="fas fa-check-square fa-lg"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div><!-- row -->
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-4">
+                                                <label for="perPagto" class="text-primary strong mt-2">
+                                                   período de Pagamento:
+                                                </label>
+                                            </div><!--col-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input name="" id="perPagto" value="Mensal" disabled class="form-control"></input>
+                                                    
+                                                </div><!--form-group-->                                                
+                                            </div><!--col-->
+                                            <div class="col-sm-3">   
+                                                <div class="group-button">
+                                                    <button type="button" data-toggle="tooltip" title="editar" class="text-warning mr-2 js-edit">
+                                                            <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button type="reset" data-toggle="tooltip" title="cancelar" hidden class="text-danger mr-2 js-cancel">
+                                                        <i class="fas fa-times-circle fa-lg"></i>
+                                                    </button>
+                                                    <button type="button" data-toggle="tooltip" title="salvar" hidden class="text-success js-save">
+                                                        <i class="fas fa-check-square fa-lg"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div><!-- row -->
+
+                                        <div class="row mt-3">
+                                            <div class="col-md-4">
+                                                <label for="diaVenc" class="text-primary strong mt-2">
+                                                   Dia de Vencimento:
+                                                </label>
+                                            </div><!--col-->
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input name="" id="diaVenc" value="10" disabled class="form-control day"></input>
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                            <div class="col-sm-3">   
+                                                <div class="group-button">
+                                                    <button type="button" data-toggle="tooltip" title="editar" class="text-warning mr-2 js-edit">
+                                                            <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button type="reset" data-toggle="tooltip" title="cancelar" hidden class="text-danger mr-2 js-cancel">
+                                                        <i class="fas fa-times-circle fa-lg"></i>
+                                                    </button>
+                                                    <button type="button" data-toggle="tooltip" title="salvar" hidden class="text-success js-save">
+                                                        <i class="fas fa-check-square fa-lg"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div><!-- row -->
+
+                                    </div><!--estipulante-->
+
+                                    <div class="option-container  mt-4 mb-0">
+                    
+                                        <div class="option-content"> 
+                                            <label for="terms-comerciais" class="check-control">
+                                                <input type="checkbox" value="terms"   name="terms" id="terms-comerciais">
+                                                <strong class="">Li e aceito as  <a href="#" data-toggle="modal" data-target="#exampleModal">Condições comerciais</a> </strong>                                  
+                                                <span></span>
+                                            </label> 
+                                        </div>
+                                    </div>
+
+                                    <div class="option-container  mt-1">
+                    
+                                        <div class="option-content"> 
+                                            <label for="terms-politic" class="check-control">
+                                                <input type="checkbox" value="terms"   name="terms" id="terms-politic">
+                                                <strong class="">Titular dos dados informado sobre a <a href="#" data-toggle="modal" data-target="#exampleModal">Política de privacidade</a> </strong>                                  
+                                                <span></span>
+                                            </label> 
+                                        </div>
+                                    </div>
+
+                                </form><!--form-->
+                           </div><!--mt-->
+
+                            
+                          
+                        </div>
+                    </div><!--card-->
+
+                    <div class="row mt-5">
+                        <!-- <div class="col-md-4 offset-8 mb-5">
+                            <a href="statusproposta.html" class="btn btn-block btn-secondary btn-icon">
+                                Próxima etapa
+                                <div class="icon-button ml-2">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </a>
+                        </div> -->
+                        <div class="col-sm-12 mt-4">
+                            <a href="apolice.html" class="btn btn-primary btn-block icon-button text-uppercase">
+                                Emitir Proposta
+                                <i class="fas fa-file-contract ml-2 fa-lg"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mt-4">
+                            <a href="emissoes.html" class="btn btn-gray btn-block ">
+                                <span class="flip fas fa-play mr-2 fa-sm"></span>
+                               Etapa Anterior
+                                
+                            </a>
+                        </div>
+                        <!-- <div class="col-md-3  col-sm-6 mt-4">
+                            <button class="btn btn-outline-primary btn-block ">
+                               Enviar por SMS
+                                <span class="fas fa-sms ml-2 "></span>
+                            </button>
+                        </div>
+                        <div class="col-md-3  col-sm-6 mt-4">
+                            <button class="btn btn-outline-primary btn-block ">
+                               Enviar por E-mail
+                                <span class="fas fa-envelope-square ml-2 "></span>
+                            </button>
+                        </div>
+                        <div class="col-md-3  col-sm-6  mt-4">
+                            <a href="anexarDocumentos.html" class="btn btn-outline-secondary btn-block icon-button">
+                                Assinatura Física
+                                <span class="fas fa-file-signature ml-2 "></span>
+                            </a>
+                        </div> -->
+                    </div><!--row-->
+                </div><!--content-page-->
+                
+            </div><!--Main-->
+
+            <div class="footer">
+                <div class="brand-footer">
+                    <img src="Assets/img/brand/Logo_Diretrix_Footer.png" alt="logo DiretrixOn" class="img-fluid">
+                </div><!--brand-footer-->
+                <div class="text-footer">
+                    <p>Todos os direitos reservados © 2022 Diretrix.On</p>
+                </div><!--text-footer-->
+            </div><!--footer-->
+        </div><!--wrapper-content-->
+    </div><!--wrapper-->
+
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Termos e condições</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nulla dolores omnis quam velit dolorum. Qui obcaecati maxime magni libero sunt, corrupti quo voluptatum? Aspernatur alias sint quasi architecto labore.
+          Rerum, voluptate dignissimos eius quisquam voluptates hic officiis debitis eum eos esse! Culpa sequi sint, distinctio quisquam iusto, a quo animi asperiores sed labore quasi voluptatibus inventore minima rem ullam!
+          Cum laboriosam veritatis, nostrum voluptatem officiis est. Nostrum fugit aliquid unde eaque perferendis, placeat alias fugiat consectetur sunt inventore eligendi sed iusto quibusdam soluta? Sunt explicabo quis animi nostrum excepturi?
+          Sit qui veniam aut, voluptate laborum ullam molestias deleniti placeat fugiat! Laudantium beatae, at quidem enim adipisci consequuntur praesentium fugit hic dicta non odio, cupiditate magni, suscipit eligendi tempora impedit!
+          Ipsum eius aspernatur ipsam fuga libero facilis ea soluta aperiam, dicta voluptatem inventore? Debitis facilis, beatae quos nemo ut fuga quidem atque incidunt consectetur sint soluta explicabo! Quaerat, repellat inventore!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus reprehenderit laboriosam ratione fuga iure iste rem veritatis. Amet laboriosam sapiente rem iusto? Reiciendis totam debitis impedit consectetur soluta aliquam?
+          Quos sed amet aut accusantium ratione voluptas qui, iure, corrupti unde quibusdam blanditiis minus doloribus aliquid delectus ut. Laborum ex culpa mollitia ipsum! Cumque earum, non quia consectetur error architecto?
+          Odit autem quod temporibus similique a, in optio ea eum assumenda numquam sequi sapiente qui aperiam cum eius praesentium. Ad, reprehenderit. Sunt dolores quia quos deleniti! Alias ullam harum reiciendis.
+          Quae alias saepe reprehenderit, obcaecati numquam, magnam placeat, tempore enim officiis rerum totam voluptates cum earum eaque quo corporis atque. Veniam reprehenderit nulla sit odio eius sapiente totam, animi in.
+          Repudiandae sed molestiae officiis laudantium aspernatur nam natus veritatis voluptatum sequi itaque labore nisi magnam, quae ducimus quisquam amet qui similique iure. Nostrum rem deserunt est quaerat, reiciendis consectetur rerum.
+          Qui ipsa quaerat sequi sint! Placeat eius fuga laboriosam. Temporibus consequuntur impedit voluptatum commodi vel tenetur necessitatibus repellat nihil harum veritatis quo, illo quas, saepe hic autem facere, eveniet ratione.
+          Laboriosam fugiat pariatur consectetur dolores tempore commodi laborum, ipsam explicabo est? Aliquam facilis suscipit quia fugiat! Optio in pariatur maiores ipsum. Incidunt fugiat accusamus atque molestiae officiis aperiam, adipisci reiciendis!
+          Odio accusantium nisi, excepturi ipsa ut quis maiores? Impedit maxime in ratione laborum corporis vel unde, necessitatibus, tempore numquam quas dolore quia consequuntur amet ipsam ut nesciunt voluptatem minus similique!
+          Consectetur itaque perferendis corrupti animi adipisci, fuga laudantium nulla? Quo mollitia voluptatibus praesentium hic vero quos qui, quas, adipisci sed magnam consectetur dolor nisi necessitatibus, voluptatem minima veritatis quis neque?
+          Voluptatem, facere quia omnis explicabo maiores dolorem veritatis! Enim eos nesciunt, consectetur cumque necessitatibus magnam eligendi sapiente neque soluta similique, eum, fugit quod pariatur vitae sequi saepe adipisci dolorem alias.
+          Quos dolorem neque alias animi voluptas voluptate asperiores. Facere voluptates numquam deleniti. Distinctio, consectetur eligendi ut quam esse debitis sapiente. Sunt nihil quisquam in atque, eum totam sit expedita omnis?
+          Non ratione nisi dicta, blanditiis velit in. Exercitationem fuga ea qui excepturi libero illo quas asperiores eos obcaecati vero consequatur fugit blanditiis similique saepe iure, adipisci quasi. Modi, nesciunt voluptatibus.
+          Quae, soluta quas labore ipsam hic consequuntur officia deserunt ad debitis mollitia id alias laudantium suscipit consequatur vero est minus, aut explicabo dolorum vel pariatur at porro. Placeat, quo reprehenderit!
+          Fugiat quod amet aliquam. Amet aspernatur error laudantium dolorem alias voluptate asperiores numquam eveniet ex? Porro, facilis magni sint eum molestias excepturi sed veritatis, nostrum enim error maxime. Sapiente, quae.
+          Saepe deleniti debitis accusantium soluta quidem animi recusandae et id praesentium nesciunt a qui blanditiis minima atque, officia facere iusto quos placeat repudiandae, similique aliquid voluptates laudantium autem. Iusto, tempora.
+        </div>
+        <div class="modal-footer">
+            <a href="#" type="button" class="btn btn-outline-secondary">
+                Download
+                <span class="ml-2 fas fa-file-download"></span>
+            </a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+      <!-- Chosen -->
+    <script src="Assets/plugins/chosen/chosen.jquery.js"></script>
+
+    <!-- Sweetalert -->
+    <script src="Assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
+    <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" integrity="sha256-u7MY6EG5ass8JhTuxBek18r5YG6pllB9zLqE4vZyTn4=" crossorigin="anonymous"></script>
+
+    <!-- script pages -->
+    <script src="Assets/js/main.js"></script>  
+    <script src="Assets/js/dadosAdicionais.js"></script>
+    
+</body>
+</html>

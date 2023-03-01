@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alba Seguradora</title>
+
+    <!-- Favicons -->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor-150x150.png" sizes="150x150">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png">
+
+       <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+    <!--choosen-->
+   
+    <!--Sweetalert-->
+    <link rel="stylesheet" href="Assets/plugins/sweetalert2/sweetalert2.min.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="Assets/plugins/chosen/chosen/chosen.css" rel="stylesheet">
+    <!--Styleshhet - Main-->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="header_page_login bg-blue-middle">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-sm">
+                    <a href="index.html">
+                        <div class="brand_login">
+                            <img class="responsive_img" src="Assets/img/brand/Logo_Alba_header.png" alt="Logo Alba Seguradora" class="img-fluid">
+                        </div>
+                    </a> <!--link_brand-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nav-restrict">
+                            <div class=" dropdown">
+                                <a href="#" class="nav-link link-especial btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    <div class="brand-icon-profile">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="brand-data-profile">
+                                        <strong class=""> Corretor: &nbsp;</strong>
+                                         <span>Marcos</span>
+                                        <span class="ml-3 ">
+                                            <i class="fas fa-angle-down"> </i>
+                                        </span>
+                                    </div>
+                                    
+                                </a>
+                                <div class="dropdown-menu navbar-top-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="data-user">
+                                            <i class="fa fa-user fa-fw"></i> Usuário
+                                            <span class="pull-right ">Marcos</span>                                        
+                                        </div>
+                                    </a>                                    
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-wifi fa-fw"></i> I.P
+                                        <span class="pull-right">187.75.227.19</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-unlock-alt fa-fw"></i> Senha
+                                        <span class="pull-right">Alterar</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="fa fa-sign-out-alt fa-fw"></i> 
+                                        <span class="pull-right">Sair</span>
+                                    </a>
+                                </div><!--dropdown-menu-->
+                            </div><!--dropdown-->
+                        </div>
+                    </div>
+                </nav>
+            </div><!--Container-->
+        </div><!--header_page_login-->
+    </header> <!--header-->
+
+    <div class="wrapper">
+        <div class="sidebar bg-blue-dark" id="sidebar">
+            <ul class="sidebar-menu" id="sidebar_menu">
+                <li class="item-menu">
+                    <a href="index.html">
+                        <div class="icon-menu">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="title-menu">
+                            Página Inicial
+                        </div>
+                    </a>
+                    
+                </li>
+            </ul>
+            <div class="content-help bg-green">
+                <h3>Precisa de ajuda?</h3>
+                <p>
+                    Entre em contato com <br/> a nossa equipe de atendimento <br/>  no telefone <a href="tel:1130645693">(11) 3064-5693</a> ou no <br/>e-mail:  <a href="mailto:atendimento@diretrixon.com.br">atendimento@diretrixon.com.br</a>  
+                </p>
+            </div>
+            <div class="sidebar-control" id="sidebar_control">
+                <div class="button-sidebar">
+                    <div class="icon-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-content bg-white">
+            <div class="main">
+                <div class="content-page">
+
+                    <div class="header-content-page">
+                        <a href="javascript: history.go(-1)" class="btn btn-rewind">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <div class="container-progressbar">
+                            <ul class="progressbar-step">
+                                <li class="active">Dados do Cliente</li>
+                                <li> Perfil do grupo</li>
+                                <li>Coberturas e assistências</li>
+                                <li>cotação</li>
+                                <li>Proposta</li>
+                            </ul><!---progressbar-step-->
+                        </div>   <!--container-progressbar-step-->
+                    </div><!--header-content-page-->
+
+                    <div class="title-content">
+                        <h2>Informe os dados do cliente</h2>
+                    </div>
+
+                    <div class="option-container">
+                        
+                        <div class="option-content"> 
+                            <label for="novoSeguro" class="radio-control">
+                                <input type="radio" value="novoSeguro" checked class="radio-control" name="typesecurity" id="novoSeguro">
+                                <strong class="nowrap">Novo Seguro</strong>                                  
+                                <span></span>
+                            </label>  
+
+                            <label for="newAlba" class="radio-control">
+                                <input type="radio" value="renovAlba" class="" name="typesecurity" id="newAlba">
+                                <strong class="nowrap">Renovação Alba</strong>                                  
+                                <span></span>
+                            </label>  
+
+                            <label for="newCongenere" class="radio-control">
+                                <input type="radio" value="newCongenere" name="typesecurity" id="newCongenere">
+                                <strong class="nowrap">Seguro em Congênere</strong>                                  
+                                <span></span>
+                            </label>    
+                        </div><!--option-content-->
+                        
+                        <div class="option-content-add animate__animated hide" id="selectCongenere">
+                            <label class="label-inline nowrap">Escolha a seguradora:</label>
+                            <select id="seguradora" class="chosen-select col-7" style="width:100%;"  tabindex="1">
+                                <option value="0">Selecione a Seguradora</option>
+                                <option value="1">Seguradora A</option>
+                                <option value="2">Seguradora B</option>
+                                <option value="3">Seguradora C</option>
+                                <option value="4">Seguradora D</option>
+                                <option value="5">Seguradora E</option>
+                                <option value="6">Seguradora F</option>
+                                <option value="7">Seguradora G</option>
+                                <option value="8">Seguradora H</option>
+                                <option value="9">Seguradora I</option>
+                                <option value="10">Seguradora J</option>
+                                <option value="11">Seguradora L</option>
+                                <option value="12">Seguradora M</option>
+                                <option value="13">Seguradora N</option>
+                            </select>                            
+                        </div><!--option-content-add-->
+                    </div><!--option-container-->
+
+                    <div class="card">
+                        <div class="card-body">
+                           
+
+                           <div class="mt-3">
+                                <form action="#">
+                                    <div class="card-title">
+                                        <h4>Estipulante</h4>
+        
+                                        
+                                    </div><!--card-title-->
+
+                                    <div class="estipulante-add mt-3">
+                                    
+                                        <div class="row">
+                                            <div class="col-lg-3">
+        
+                                                <div class="form-group">
+                                                    <label for="cnpjEstipulante" class="control-label label-strong label-primary">CNPJ</label>
+                                                    <input type="text" value="4161807900104"  id="cnpjEstipulante" class="form-control cnpj" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                        
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary">Razão Social:</label>
+                                                    <input type="text" value="XPTO LTDA" disabled  id="razaoSocialEstipulante" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="segAtividadeEstipulante"   class="control-label label-strong label-primary">Segmento:</label>
+                                                    <input type="text" value="INDÚSTRIA" disabled id="segAtividadeEstipulante" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+
+                                            <div class="col-md-12">
+                                                <div class="card-title-button mt-2 mr-2">
+                                                    <button type="reset">
+                                                        <div class="text-warning mr-2">
+                                                            <i class="fas fa-eraser"></i>
+                                                        </div>
+                                                        Limpar
+                                                    </button>                                        
+                                                </div><!--card-title-button-->
+                                            </div><!--col-12-->
+                                        </div><!--row-->                                        
+                                    </div><!--estipulante-->
+                                </form><!--form-->
+                           </div><!--mt-->
+
+                            
+                           <div class="mt-3">
+                                <form action="#">
+                                
+                                    <div class="card-title">
+                                        <h4>Subestipulante 1</h4>
+                                    </div><!--card-title-->
+    
+                                    <div class="estipulante-add mt-3">                                    
+                                        <div class="row">
+                                            <div class="col-lg-3">
+        
+                                                <div class="form-group group-danger">
+                                                    <label for="cnpjEstipulante" class="control-label label-strong label-primary">CNPJ</label>
+                                                    <input type="text" id="cnpjEstipulante" value="4161807900104"  class="form-control cnpj" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                            
+                                            <div class="col-lg-3">
+                                                <div class="form-group  group-danger">
+                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary">Razão Social:</label>
+                                                    <input type="text" id="razaoSocialEstipulante" disabled value="XPTO LTDA" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group  group-danger">
+                                                    <label for="segAtividadeEstipulante" class="control-label label-strong label-primary">Segmento:</label>
+                                                    <input type="text" value="INDÚSTRIA" disabled id="segAtividadeEstipulante" value="INDÚSTRIA" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+
+                                            <div class="col-md-12">
+                                                <div class="card-title-button mt-2 mr-2">
+                                                    <button type="reset">
+                                                        <div class="text-warning mr-2">
+                                                            <i class="fas fa-eraser"></i>
+                                                        </div>
+                                                        Limpar
+                                                    </button>
+                                                    <button type="button">
+                                                        <div class="text-danger mr-2">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </div>
+                                                        excluir
+                                                    </button>
+                                                </div><!--card-title-button-->
+                                            </div><!--col-12-->
+                                        </div><!--row-->
+                                    </div><!--estipulante-->
+                                </form> <!--form-->
+                           </div><!--mt-->
+
+                           <div class="mt-3">
+                                <form action="#">
+                                
+                                    <div class="card-title">
+                                        <h4>Subestipulante 2</h4>
+                                    </div><!--card-title-->
+
+                                    <div class="estipulante-add mt-3">                                    
+                                        <div class="row">
+                                            <div class="col-lg-3">
+        
+                                                <div class="form-grou">
+                                                    <label for="cnpjEstipulante"  class="control-label label-strong label-primary">CNPJ</label>
+                                                    <input type="text" value="4161807900104" id="cnpjEstipulante" class="form-control cnpj" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+                                            
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="razaoSocialEstipulante" class="control-label label-strong label-primary"> Razão Social:</label>
+                                                    <input type="text"  value="XPTO LTDA" disabled id="razaoSocialEstipulante" class="form-control " required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+        
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="segAtividadeEstipulante" class="control-label label-strong label-primary">Segmento:</label>
+                                                    <input type="text"  value="INDÚSTRIA" disabled id="segAtividadeEstipulante" class="form-control" required>
+                                                    <!-- <span><small>Esqueceu seu e-mail?</small></span> -->
+                                                </div><!--form-group-->
+                                            </div><!--col-->
+
+                                            <div class="col-md-12">
+                                                <div class="card-title-button mt-2 mr-2">
+                                                    <button type="reset">
+                                                        <div class="text-warning mr-2">
+                                                            <i class="fas fa-eraser"></i>
+                                                        </div>
+                                                        Limpar
+                                                    </button>
+                                                    <button type="button">
+                                                        <div class="text-danger mr-2">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </div>
+                                                        excluir
+                                                    </button>
+                                                </div><!--car-title-button-->
+                                            </div><!--col-12-->
+                                        </div><!--row-->
+                                    </div><!--estipulante-->
+                                </form> 
+                            </div>
+                           
+                            <div class="row mt-4 mb-4">
+                                <div class="col-sm-6 col-md-4 offset-md-8 offset-sm-6">
+                                    <div class="form-group mt-4">
+                                        <button class=" btn btn-outline-primary btn-block btn-icon">
+                                            Adicionar Subestipulante
+                                            <div class="icon-button ml-2">
+
+
+                                            </div>
+                                        </button>
+                                    </div><!--form-group-->                                       
+                                </div><!--col-->
+                            </div><!--row-->
+                        </div>
+                    </div><!--card-->
+
+                    <div class="row mt-5">
+                        <div class="col-sm-8 col-md-4 offset-md-8 offset-sm-4 mb-5">
+                            <a href="perfilgrupo.html" class="pull-right btn-block btn btn-secondary btn-icon">
+                                Próxima etapa
+                                <div class="icon-button ml-2">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </a>
+                        </div><!--col-->
+                    </div><!--row-->
+                </div><!--content-page-->
+                
+            </div><!--Main-->
+
+            <div class="footer">
+                <div class="brand-footer">
+                    <img src="Assets/img/brand/Logo_Diretrix_Footer.png" alt="logo DiretrixOn" class="img-fluid">
+                </div><!--brand-footer-->
+                <div class="text-footer">
+                    <p>Todos os direitos reservados © 2022 Diretrix.On</p>
+                </div><!--text-footer-->
+            </div><!--footer-->
+        </div><!--wrapper-content-->
+    </div><!--wrapper-->
+
+    <script   src="https://code.jquery.com/jquery-3.6.3.min.js"   integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="   crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+        <!-- Chosen -->
+        <script src="Assets/plugins/chosen/chosen.jquery.js"></script>
+   
+
+    <!-- Sweetalert -->
+    <script src="Assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
+     <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" integrity="sha256-u7MY6EG5ass8JhTuxBek18r5YG6pllB9zLqE4vZyTn4=" crossorigin="anonymous"></script>
+    
+    <!-- script page -->
+    <script src="Assets/js/main.js"></script>    
+    <script src="Assets/js/addEstipulante.js"></script>
+
+    
+</body>
+</html>

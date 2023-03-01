@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alba Seguradora</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor-150x150.png" sizes="150x150">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png">
+
+       <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+
+    <link href="Assets/plugins/chosen/chosen/chosen.css" rel="stylesheet">
+
+    <!-- https://codepen.io/guilhermefilipiak/pen/oBaRgZ -->
+    <link rel="stylesheet" href="Assets/plugins/switchery/switchery.css">
+
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="header_page_login bg-blue-middle">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-sm">
+                    <a href="index.html">
+                        <div class="brand_login">
+                            <img class="responsive_img" src="Assets/img/brand/Logo_Alba_header.png" alt="Logo Alba Seguradora" class="img-fluid">
+                        </div>
+                    </a> <!--link_brand-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nav-restrict">
+                            <div class=" dropdown">
+                                <a href="#" class="nav-link link-especial btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    <div class="brand-icon-profile">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="brand-data-profile">
+                                        <strong class=""> Corretor: &nbsp;</strong>
+                                         <span>Marcos</span>
+                                        <span class="ml-3 ">
+                                            <i class="fas fa-angle-down"> </i>
+                                        </span>
+                                    </div>
+                                    
+                                </a>
+                                <div class="dropdown-menu navbar-top-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="data-user">
+                                            <i class="fa fa-user fa-fw"></i> Usuário
+                                            <span class="pull-right ">Marcos</span>                                        
+                                        </div>
+                                    </a>                                    
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-wifi fa-fw"></i> I.P
+                                        <span class="pull-right">187.75.227.19</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-unlock-alt fa-fw"></i> Senha
+                                        <span class="pull-right">Alterar</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="fa fa-sign-out-alt fa-fw"></i> 
+                                        <span class="pull-right">Sair</span>
+                                    </a>
+                                </div><!--dropdown-menu-->
+                            </div><!--dropdown-->
+                        </div>
+                    </div>
+                </nav>
+            </div><!--Container-->
+        </div><!--header_page_login-->
+    </header> <!--header-->
+
+    <div class="wrapper">
+        <div class="sidebar bg-blue-dark" id="sidebar">
+            <ul class="sidebar-menu" id="sidebar_menu">
+                <li class="item-menu">
+                    <a href="index.html">
+                        <div class="icon-menu">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="title-menu">
+                            Página Inicial
+                        </div>
+                        
+                    </a>
+                </li>
+            </ul>
+            <div class="content-help bg-green">
+                <h3>Precisa de ajuda?</h3>
+                <p>
+                    Entre em contato com <br/> a nossa equipe de atendimento <br/>  no telefone <a href="tel:1130645693">(11) 3064-5693</a> ou no <br/>e-mail:  <a href="mailto:atendimento@diretrixon.com.br">atendimento@diretrixon.com.br</a>  
+                </p>
+            </div>
+            <div class="sidebar-control" id="sidebar_control">
+                <div class="button-sidebar">
+                    <div class="icon-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-content bg-white">
+            <div class="main">
+                <div class="content-page">
+
+                    <div class="header-content-page">
+                        <a href="javascript: history.go(-1)" class="btn btn-rewind">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <div class="container-progressbar">
+                            <ul class="progressbar-step">
+                                <li class="active">Dados do Cliente</li>
+                                <li class="active"> Perfil do grupo</li>
+                                <li class="active">Coberturas e assistências</li>
+                                <li class="active">cotação</li>
+                                <li>Proposta</li>
+                            </ul><!---progressbar-step-->
+                        </div>   <!--container-progressbar-step-->
+                    </div><!--header-content-page-->
+
+                    <div id="resultContainer">
+
+                        <div class="title-content">
+                            <ul class="tag-container">
+                                <li>
+                                    <div class="tag">
+                                        <p>Nº de Cotação: <span>00011</span></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tag">
+                                        <p>Data: <span>25/11/2022</span></p>                                    
+                                    </div>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="ticket-container">
+                            <div class="table mb-0">
+                                <table class="ticket">
+                                    
+                                    <tbody>
+                                        <tr class="title text-uppercase strong">
+                                            <td colspan="6">
+                                                Estipulante
+                                            </td>
+                                        </tr>
+                                        <tr class="subtitle">
+                                            <td colspan="4" class="strong">XPTO LTDA</td>
+                                            <td colspan="2"><span class="strong">CNPJ:</span>  <span>41.618.079/0001-04</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4"><span class="strong">00.00-0-00</span> - <span> xxxxxxxxxx</span></td>
+                                            <td colspan="2">Seguro Transf. de Seguradora</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4"><span class="strong">E-mail:</span> - <span> xpto@xptoltda.com.br</span></td>
+                                            <td colspan="2"><span class="strong">Segmento:</span> <span> Indústria</span></td>
+                                        </tr>
+                                        
+                                        <tr class="title text-uppercase strong">
+                                            <td colspan="6">
+                                                Subestipulante
+                                            </td>
+                                        </tr>
+                                        <tr class="subtitle">
+                                            <td colspan="4">XPTO LTDA - <span>Socios/Diretores</span></td>
+                                            <td colspan="2">CNPJ <span>60.635.374/0001-04</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="ticket-list">
+                                                <div class="toppings-title strong">
+                                                    Coberturas
+                                                </div>
+                                                <ul class="toppings-list">
+                                                    <li>Principal: <span>Morte; MA 100%; IPA até 100%; IFPD 100%;</span></li>
+                                                    <li>Cônjuge: <span>Morte 50%,</span></li>
+                                                    <li>Filhos:<span>Morte 10% máx. R$ 10.000,00;</span></li>
+                                                </ul>
+                                            </td>
+                                            <td colspan="4" class="ticket-list">
+                                                <div class="toppings-title strong">
+                                                    Assistências
+                                                </div>
+                                                <ul class="toppings-list">
+                                                    <li>Funeral Fam. até R% <span>5.000,00;</span></li>
+                                                    <li>Cesta básica R$ <span>150,00</span>X <span>6</span>meses;</li>
+                                                    <li>Cesta Natalidade:<span>I;</span></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="strong">
+                                                Tipo de Capital Segurado: 
+                                                <span>Global</span>
+                                            </td>
+                                            <td>
+                                                <div class="ticket-item">
+                                                    Individual: 
+                                                    <div class="ticket-subitem">
+                                                        R$<span>10.000,00</span> 
+                                                    </div>                                            
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="ticket-item">
+                                                    Individual Máx: 
+                                                    <div class="ticket-subitem">
+                                                        R$ <span>10.000,00</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                            </td>
+                                            <td>
+                                                <div class="ticket-item">
+                                                    IS total:
+                                                    <div class="ticket-subitem">
+                                                        R$ <span>5.000.000,00</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="small">
+                                                <div class="ticket-item">
+                                                    Vidas Cotadas:
+                                                    <div class="ticket-subitem">
+                                                        <span>490</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="small"> 
+                                                <div class="ticket-item">
+                                                    Limite de idade: 
+                                                    <div class="ticket-subitem">
+                                                        <span>65</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="small" >
+                                                <div class="ticket-item">
+                                                    Adesão
+                                                    <div class="ticket-subitem">
+                                                        <span>Compulsória</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="small">
+                                                <div class="ticket-item">
+                                                    Custeio:
+                                                    <div class="ticket-subitem">
+                                                        <Span>Não Contributário</Span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            
+                                            <td class="small strong">
+                                                <div class="ticket-item">
+                                                    Taxa Média Mensal:
+                                                    <div class="ticket-subitem">
+                                                        <span>0,2512%</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="small strong">
+                                                <div class="ticket-item">
+                                                    Prêmio estimado:
+                                                    <div class="ticket-subitem">
+                                                        <span>R$ 1.331,36</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr class="subtitle">
+                                            <td colspan="4" class="strong">XPTO LTDA - <span>Colaboradores</span></td>
+                                            <td colspan="2"><span class="strong">CNPJ: </span> <span>60.635.374/0001-04</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="ticket-list">
+                                                <div class="toppings-title strong">
+                                                    Coberturas
+                                                </div>
+                                                <ul class="toppings-list">
+                                                    <li>Principal: <span>Morte; MA 100%; IPA até 100%; IFPD 100%;</span></li>
+                                                    <li>Cônjuge: <span>Morte 50%,</span></li>
+                                                    <li>Filhos:<span>Morte 10% máx. R$ 10.000,00;</span></li>
+                                                </ul>
+                                            </td>
+                                            <td colspan="4" class="ticket-list">
+                                                <div class="toppings-title strong">
+                                                    Assistências
+                                                </div>
+                                                <ul class="toppings-list">
+                                                    <li> -x-</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="strong">Tipo de Capital Segurado: <span>Global</span>  </li>
+                                            <td>
+                                                <div class="ticket-item">
+                                                    <div class="ticket-subitem">
+
+                                                    </div>
+                                                </div>
+                                                Individual: <span>R$ 10.000,00</span>
+                                            </td>
+                                            <td>
+                                                <div class="ticket-item">
+                                                    Individual Máx:
+                                                    <div class="ticket-subitem">
+                                                        R$ <span>10.000,00</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="ticket-item">
+                                                    IS total:
+                                                    <div class="ticket-subitem">
+                                                        R$ <span>5.000.000,00</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="small">
+                                                <div class="ticket-item">
+                                                    Vidas Cotadas:
+                                                    <div class="ticket-subitem">
+                                                        <span>490</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="small">
+                                                <div class="ticket-item">
+                                                    Limite de idade: 
+                                                    <div class="ticket-subitem">
+                                                        <span>65</span>
+                                                    </div>
+                                                </div> 
+                                                
+                                            
+                                            </td>
+                                            <td class="small">
+                                                <div class="ticket-item">
+                                                    Adesão
+                                                    <div class="ticket-subitem">
+                                                        <span>Compulsória</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="small">
+                                                <div class="ticket-item">
+                                                    Custeio:
+                                                    <div class="ticket-subitem">
+                                                    <span>Não Contributário</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            
+                                            <td class="small strong">
+                                                <div class="ticket-item">
+                                                    Taxa Média Mensal: 
+                                                    <div class="ticket-subitem">
+                                                        <span>0,2512%</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="small strong">
+                                                <div class="ticket-item">
+                                                    Prêmio estimado:
+                                                    <div class="ticket-subitem">
+                                                        R$ <span>1.331,36</span> 
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="title">
+                                            <td class="small text-center">
+                                                <div class="ticket-item">
+                                                    Vidas Cotadas:
+                                                    <div class="ticket-subitem">
+                                                        <span>500</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="small  "> 
+                                                <div class="ticket-item">
+                                                    Limite de idade:
+                                                    <div class="ticket-subitem">
+                                                        <span>65</span>
+                                                    </div>
+                                                </div>
+                                            
+                                            </td>
+
+                                            <td colspan="2" class="small text-center">
+                                                <div class="ticket-item">
+                                                    IS total:
+                                                    <div class="ticket-subitem">
+                                                        R$  <span>5.000.000,00</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            
+                                            <td class="small strong">
+                                                <div class="ticket-item">
+                                                    Taxa Média Mensal:
+                                                    <div class="ticket-subitem">
+                                                        <span>0,2512%</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="small strong text-center">
+                                                <div class="ticket-item">
+                                                    Prêmio total estimado: 
+                                                    <div class="ticket-subitem">
+                                                        <span>R$ 1.331,36</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table><!--table-->
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-sm-12">
+                                <p> - Taxa média mensal já incluso IOF (0,38%)</p>
+                                <p> - Aplicam-se os percentuais das coberturas sobre o capital segurado da cobertura de Morte para determinação de seus respectivos valores.</p> 
+                                <p> - Caso seja constatada qualquer insuficiência, omissão, excesso ou alteração nos dados fornecidos pelo <span class="text-uppercase">estipulante</span> à <span class="text-uppercase">SEGURADORA</span>, quando da implantação da Apólice ou da emissão do primeiro faturamento, que provoque desvio superior a 10% (dez por cento) no cálculo atuarial que resultou a taxa apurada, tal taxa será  recalculada de forma a manter íntegras as condições contratadas, sob pena da apólice ser cancelada.</p> 
+    
+                                <p class="mt-3 mb-2">
+                                    Este estudo possui caráter meramente ilustrativo, visa subsidiar a tomada de decisão do proponente quanto as coberturas que podem ser contratadas e sugerir capitais segurados. Possui validade de 30 dias, contados da data de sua emissão, e não se caracteriza como contratação. Os valores aqui representados são estimados com base nas premissas dos planos vigentes na data deste estudo. Para a contratação do seguro, será necessário preencher a proposta de contratação, e sua aceitação está sujeita à análise de risco.
+                                </p>                                
+                            </div>
+
+                            <div class="col-sm-12 no-screen print ">
+                                <h3 class="text-primary text-uppercase mb-3">Resumo da cotação</h3>
+                                <ol class="mb-3 mt-2">
+                                    <li class="mb-3">
+                                        <span class="text-primary strong text-uppercase mb-3">Informações preliminares</span>                                    
+                                        <ol class="mt-2">
+                                            <li>
+                                                O registro deste produto é automático e não representa aprovação ou recomendação por parte da Superintendência de Seguros Privados - SUSEP.  
+                                            </li>
+                                            <li>
+                                                A Contratação deste Seguro é opcional, sendo facultado ao <span class="text-uppercase">Segurado</span> o seu cancelamento qualquer tempo, com devolução do prêmio pago referente ao período a decorrer, se houver.
+                                            </li>
+                                            <li>
+                                                A aceitação deste seguro está sujeita à análise do risco.
+                                            </li>
+                                            <li>
+                                                O <span class="text-uppercase">Segurado</span> poderá consultar a situação cadastral de seu corretor de seguros, no site <a href="https://www.susep.gov.br"> www.susep.gov.br</a>, por meio do número de seu registro na SUSEP, nome completo, CNPJ ou CPF. 
+                                            </li>
+                                            <li>
+                                                Na contratação por meios remotos o  <span class="text-uppercase">Segurado</span> poderá desistir do contrato do seguro no prazo de até 7 (sete) dias corridos a contar da data da sua adesão ao seguro. 
+                                            </li>
+                                            <li>
+                                                A utilização de meios remotos na emissão da apólice garante ao <span class="text-uppercase">Segurado</span> a possibilidade de impressão do documento e, a qualquer tempo, o fornecimento de sua versão física, mediante solicitação à <span class="text-uppercase">Segurado</span>.
+                                            </li>
+                                            <li>
+                                                O registro deste produto é automático e não representa aprovação ou recomendação por parte da Superintendência de Seguros Privados - SUSEP.
+                                            </li>
+                                            <li>
+                                                Para sinistros, o Segurado poderá entrar em contato pelo telefone <a href="tel:08007705549">0800 770 5549</a>  (atendimento de segunda a sexta, das 8h às 20h e aos sábados, das 8h às 17h, exceto feriados) ou pelo  <strong>SAC <a href="tel:08007251105">0800 725 1105</a></strong>  (atendimento todos os dias, 24 horas por dia) ou por meio do <strong>endereço eletrônico</strong>   <a href="mailto:atendimento@alba.com.br">atendimento@alba.com.br</a>. 
+                                                Para atendimento à pessoa com deficiência auditiva ou de fala, o segurado deverá enviar mensagem para o <strong> WhatsApp <a href="tel:1143697171">(11) 4369-7171</a></strong>  ou através do <strong>Chat</strong> no site <a href="www.alba.com.br">www.alba.com.br</a> (atendimento todos os dias, 24 horas por dia) ou ainda para o endereço eletrônico <a href="mailto:atendimento_def@alba.com.br">atendimento_def@alba.com.br</a>. Caso o Segurado possua um número de protocolo do SAC sem solução satisfatória, poderá contestar na Ouvidoria através do  <strong>telefone</strong>  <a href="tel:08007251071">0800 725 1071</a>  (atendimento de segunda a sexta, das 7h às 20h, exceto feriados). 
+                                            </li>
+                                            <li>
+                                                Para registro de reclamações dos consumidores pessoas físicas, deverá ser utilizada a plataforma digital oficial: <a href="mailto:https://www.consumidor.gov.br">https://www.consumidor.gov.br</a> .  
+                                            </li>
+                                            <li>
+                                                Suas informações estão protegidas pela Lei Geral de Proteção de Dados, sendo elas usadas exclusivamente para fins do presente contrato, considerando a finalidade exclusiva dos serviços descritos no item 4, respeitando o disposto na Lei nº 13.709/2018 - (LGPD). A Companhia de Seguros SEGURADORA zela pelos seus dados e informações constantes em seu banco de dados, adotando medidas técnicas, administrativas e organizacionais adequadas, de modo a garantir a segurança de seus dados pessoais. 
+                                            </li>                                        
+                                        </ol>
+                                    </li>
+
+                                    <li class="mb-3">
+                                        <span class="text-primary strong text-uppercase mt-2 mb-3">Coberturas</span>
+                                        <ol class="mt-3">
+                                            <li>
+                                                <span class="mt-2">
+                                                    As coberturas passíveis de contratação para este plano de seguro são as abaixo mencionadas, respeitadas as conjugações oferecidas pela <span class="text-uppercase">Segurado</span> e os riscos excluídos destas Condições Gerais e das respectivas Condições Especiais:
+                                                </span>
+                                                <ol class="mb-2">
+                                                    <li class="strong">Cobertura de Morte - M</li>
+                                                    <li class="strong">Cobertura de Morte Acidental - MA </li>
+                                                    <li class="strong">Cobertura de Invalidez Permanente Total ou Parcial por Acidente - IPTA </li>
+                                                    <li class="strong">Cobertura Autônoma de Invalidez Funcional Permanente Total por Doença  - IFPD </li>
+                                                    <li class="strong">Cobertura de despesas Médico-Hospitalares e Odontológicas por Acidente (DMHO)</li>
+                                                    <li class="strong">Cobertura deCobertura de Doenças Graves - DG </li>
+                                                    <li class="strong"> Cobertura de Rescisão Trabalhista por Morte - RT</li>
+                                                    <li class="strong">Cobertura de Rescisão Trabalhista por Morte Acidental - RTA </li>
+                                                    <li class="strong">Cobertura Suplementar de Inclusão de Cônjuge de Forma Automática</li>
+                                                    <li class="strong">Cláusula Suplementar de Inclusão de Filhos de Forma Automática</li>
+                                                </ol>
+                                            </li> 
+                                            <li class="text-uppercase">
+                                                Para caracterização e comercialização deste plano como contrato de seguro de vida, obrigatoriamente deverá ser contratada a cobertura de morte. 
+                                            </li>
+                                            <li class="text-uppercase">
+                                                Para efeito de aceitação e inclusão de componentes no seguro, deverá ser observado o limite de 70 (setenta) anos de idade para adesão, salvo se a seguradora expressamente aceitar a adesão de pessoa com idade superior. 
+                                            </li>
+                                            <li>
+                                                A definição de cada uma das coberturas mencionadas nestas condições gerais, seus respectivos objetivos, seus riscos excluídos específicos, <span class="text-uppercase">capital segurado/capitais segurados</span> e demais disposições estão determinados nas respectivas condições especiais
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li class="mb-3">
+                                        <span class="text-primary strong text-uppercase mt-2 mb-3">Âmbito geográfico das coberturas</span>
+                                        <ol class="mb-3 mt-2">
+                                            <li>
+                                                As Coberturas contratadas serão aplicáveis em âmbito geográfico mundial, salvo disposição em contrário discriminada nas Condições Especiais, contratuais ou na especificação da respectiva <span>Ápolice</span>.
+                                            </li>
+                                            <li>
+                                                Quando for o caso, eventuais encargos de tradução juramentada referentes ao reembolso de despesas efetuadas no exterior ficarão totalmente a cargo da  <span class="text-uppercase">seguradora</span>, o qual deve ser realizado com base no câmbio oficial de venda da data do efetivo pagamento realizado pelo <span class="text-uppercase">segurado</span>, respeitando-se o limite de cobertura estabelecido no <span class="text-uppercase">Contrato coletivo</span>, atualizado monetariamente nos termos da legislação civil vigente. 
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li class="mb-3">
+                                        <span class="text-primary strong text-uppercase mt-2 mb-3">Grupo segurável</span>
+                                        <ol lass="mb-3 mt-2">
+                                            <li class="mt-3">
+                                                É facultada à SEGURADORA a solicitação, a qualquer tempo, de apresentação de documentação que comprove as condições estabelecidas para a configuração dos clientes como <span class="text-uppercase">segurados</span> Titulares ou <span class="text-uppercase">segurados</span> Dependente, ou para seu enquadramento dentro do Grupo Segurável ou do Grupo <span class="text-uppercase">segurado</span>, bem como outros documentos que julgar necessários. 
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li class="mb-3">
+                                        <span class="text-primary strong text-uppercase mt-2 mb-2">Grupo segurado</span>
+                                        <ol class="mb-3 mt-2">
+                                            <li class="mt-3">
+                                                É o conjunto dos componentes do Grupo Segurável, desde que elegíveis e devidamente aceitos e incluídos na <span class="text-uppercase">Apólice</span> coletiva, cuja(s) cobertura(s) contratada(s) esteja(m) em vigor, observando-se as situações previstas nas Cláusulas 18 (Inclusão de <span class="text-uppercase">segurados</span>) e 19 (Condição para Aceitação Individual de <span class="text-uppercase">segurados</span>) das Condições Gerais. 
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li class="mb-3">
+                                        <span class="text-primary strong text-uppercase mb-2">Ratificação</span>
+                                        <ol class="mb-3 mt-2">
+                                            <li class="mt-3 strong">
+                                                Ficam ratificados todos os termos das Condições Contratuais deste seguro <span class="text-uppercase">Vida Capital global</span>, que podem ser obtidas pelo Estipulante/Subestipulante, corretor do seguro, segurados e beneficiários, diretamente no sítio eletrônico desta Seguradora - <a href="https://www.alba.com.br">www.alba.com.br</a>, como também no sítio eletrônico da SUSEP <a href="https://www.gov.br/susep/pt-br">www.gov.br/susep/pt-br</a>, através do nº do Processo Administrativo 15414.<span>XXXXXX/XXXX-XX</span>.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    
+                                </ol>
+                               
+                                
+                            </div> 
+
+                        </div>
+                        
+                    
+                    </div><!-- Result Container -->
+
+                   
+                    <div class="row">
+
+                        <div class="col-sm-12 mt-4">
+                            <a href="dadosAdicionais.html" class="btn btn-primary btn-block icon-button text-uppercase">
+                                Gerar Proposta
+                                <i class="fas fa-file-contract ml-2 fa-lg"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4 mt-4">
+                            <a href="coberturas.html" class="btn btn-gray btn-block ">
+                                <span class="flip fas fa-play mr-2 fa-sm"></span>
+                               Etapa Anterior
+                                
+                            </a>
+                        </div>
+                       
+                        <div class="col-sm-4 offset-sm-4 mt-4">
+                            <button id="Download_PDF" class="btn btn-outline-secondary btn-block icon-button">
+                                Baixar PDF
+                                <span class="fas fa-file-download ml-2 "></span>
+                            </button>
+                        </div>
+                        
+                    </div>
+
+                </div><!--content-page-->
+                
+            </div><!--Main-->
+
+            <div class="footer">
+                <div class="brand-footer">
+                    <img src="Assets/img/brand/Logo_Diretrix_Footer.png" alt="logo DiretrixOn" class="img-fluid">
+                </div><!--brand-footer-->
+                <div class="text-footer">
+                    <p>Todos os direitos reservados © 2022 Diretrix.On</p>
+                </div><!--text-footer-->
+            </div><!--footer-->
+        </div><!--wrapper-content-->
+    </div><!--wrapper-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+      <!-- Chosen -->
+    <script src="Assets/plugins/chosen/chosen.jquery.js"></script>
+    <script src="Assets/plugins/switchery/switchery.js"></script>
+      
+    <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" integrity="sha256-u7MY6EG5ass8JhTuxBek18r5YG6pllB9zLqE4vZyTn4=" crossorigin="anonymous"></script>
+
+    <!-- print -->
+    <script src="Assets/plugins/print/print.js"></script>
+
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/js/emissoes.js"></script>
+    
+</body>
+</html>

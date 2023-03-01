@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alba Seguradora</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor-150x150.png" sizes="150x150">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png">
+
+       <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+
+    <link href="Assets/plugins/chosen/chosen/chosen.css" rel="stylesheet">
+
+    <!-- https://codepen.io/guilhermefilipiak/pen/oBaRgZ -->
+    <link rel="stylesheet" href="Assets/plugins/switchery/switchery.css">
+
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="header_page_login bg-blue-middle">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-sm">
+                    <a href="index.html">
+                        <div class="brand_login">
+                            <img class="responsive_img" src="Assets/img/brand/Logo_Alba_header.png" alt="Logo Alba Seguradora" class="img-fluid">
+                        </div>
+                    </a> <!--link_brand-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nav-restrict">
+                            <div class=" dropdown">
+                                <a href="#" class="nav-link link-especial btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    <div class="brand-icon-profile">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="brand-data-profile">
+                                        <strong class=""> Corretor: &nbsp;</strong>
+                                         <span>Marcos</span>
+                                        <span class="ml-3 ">
+                                            <i class="fas fa-angle-down"> </i>
+                                        </span>
+                                    </div>
+                                    
+                                </a>
+                                <div class="dropdown-menu navbar-top-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="data-user">
+                                            <i class="fa fa-user fa-fw"></i> Usuário
+                                            <span class="pull-right ">Marcos</span>                                        
+                                        </div>
+                                    </a>                                    
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-wifi fa-fw"></i> I.P
+                                        <span class="pull-right">187.75.227.19</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-unlock-alt fa-fw"></i> Senha
+                                        <span class="pull-right">Alterar</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="fa fa-sign-out-alt fa-fw"></i> 
+                                        <span class="pull-right">Sair</span>
+                                    </a>
+                                </div><!--dropdown-menu-->
+                            </div><!--dropdown-->
+                        </div>
+                    </div>
+                </nav>
+            </div><!--Container-->
+        </div><!--header_page_login-->
+    </header> <!--header-->
+
+    <div class="wrapper">
+        <div class="sidebar bg-blue-dark" id="sidebar">
+            <ul class="sidebar-menu" id="sidebar_menu">
+                <li class="item-menu">
+                    <a href="index.html">
+                        <div class="icon-menu">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="title-menu">
+                            Página Inicial
+                        </div>
+                        
+                    </a>
+                </li>
+            </ul>
+            <div class="content-help bg-green">
+                <h3>Precisa de ajuda?</h3>
+                <p>
+                    Entre em contato com <br/> a nossa equipe de atendimento <br/>  no telefone <a href="tel:1130645693">(11) 3064-5693</a> ou no <br/>e-mail:  <a href="mailto:atendimento@diretrixon.com.br">atendimento@diretrixon.com.br</a>  
+                </p>
+            </div>
+            <div class="sidebar-control" id="sidebar_control">
+                <div class="button-sidebar">
+                    <div class="icon-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-content bg-white">
+            <div class="main">
+                <div class="content-page">
+
+                    <div class="header-content-page">
+                        <a href="javascript: history.go(-1)" class="btn btn-rewind">
+                            <i class="fas fa-angle-left"></i>
+                        </a>
+                        <div class="container-progressbar">
+                            <ul class="progressbar-step">
+                                <li class="active">Dados do Cliente</li>
+                                <li class="active"> Perfil do grupo</li>
+                                <li class="active">Coberturas e assistências</li>
+                                <li class="active">cotação</li>
+                                <li class="active">Proposta</li>
+                            </ul><!---progressbar-step-->
+                        </div>   <!--container-progressbar-step-->
+                    </div><!--header-content-page-->
+
+                    <div id="resultContainer">
+                        <div class="content-print">
+                            <div class="row mt-5 mb-4 no-screen print">
+                                <div class="col-sm-12">
+                                    <p> Prezado (a) Segurado(a)</p>
+                                    <p class="mt-2">
+                                        Temos a satisfação de passar às suas mãos o <span class="strong">Proposta de Contratação</span> do seu Seguro do produto <span class="text-uppercase strong">vida capital global</span>.
+                                    </p>
+    
+                                    <p  class="mt-2">
+                                        Colocamo-nos à sua disposição para prestar-lhe quaisquer informações adicionais ou esclarecimentos visando o nosso principal objetivo que é oferecer a garantia esperada deste Seguro, com transparência e responsabilidade.
+                                    </p>
+                                </div><!--col-->
+                            </div><!--row-->
+    
+                            <div class="title-content">
+                                <ul class="tag-container">
+                                    <li>
+                                        <div class="tag">
+                                            <p>Nº de Cotação: <span>00011</span></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tag">
+                                            <p>Data: <span>25/11/2022</span></p>                                    
+                                        </div>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+    
+    
+                            <div class="ticket-container">
+                                <div class="table mb-0">
+                                    <table class="ticket">
+                                        
+                                        <tbody>
+                                            <tr class="title text-uppercase strong">
+                                                <td colspan="6">
+                                                    Proposta de Contratação do Seguro Vida capital Global
+                                                </td>
+                                            </tr>
+                                            <tr class="subtitle">
+                                                <td colspan="6"><span class="text-uppercase strong">Processo SUSEP:</span>  <span>15414.604347/2023-36</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="small">
+                                                    <div class="ticket-item">
+                                                        <span class="strong">Ramo:</span>   
+                                                        <div class="ticket-subitem">
+                                                            <span>Lorem ipsum dolor sidebar_control</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="small"> 
+                                                    <div class="ticket-item">
+                                                        <span class="strong">Filial:</span> 
+                                                        <div class="ticket-subitem">
+                                                            <span>XXXXXX</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="small" >
+                                                    <div class="ticket-item">
+                                                        <span class="strong">Nº da proposta</span>
+                                                        <div class="ticket-subitem">
+                                                            <span>XXXXXXXX</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="small">
+                                                    <div class="ticket-item">
+                                                        <span class="strong">Data:</span>
+                                                        <div class="ticket-subitem">
+                                                            <Span>dd/mm/aaaaa</Span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                
+                                                <td class="small ">
+                                                    <div class="ticket-item">
+                                                        <span class="strong">Validade:</span>
+                                                        <div class="ticket-subitem">
+                                                            <span>xxxxxx</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"><span class="strong">Prazo de Vigência:</span> Início: 24hs <span> dd/mm/aaaa</span> - Término: 24h <span> dd/mm/aaaa</span></td>
+                                                <td colspan="2"><span class="strong">Tipo de documento:</span> <span> Novo</span></td>
+                                            </tr>
+                                            <tr class="title text-uppercase strong">
+                                                <td colspan="6">
+                                                    Estipulante
+                                                </td>
+                                            </tr>
+                                            <tr class="subtitle">
+                                                <td colspan="4"><span class="strong">Razão Social:</span> <span>XPTO LTDA</span></td>
+                                                <td colspan="2"><span class="strong">CNPJ: </span> <span>60.635.374/0001-04</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"><span class="strong">00.00-0-00</span> - <span> xxxxxxxxxx</span></td>
+                                                <td colspan="2">Seguro Transf. de Seguradora</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    <span class="strong">Endereço: </span>
+                                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+                                                </td>
+                                                <td >
+                                                    <span class="strong">Nº: </span>
+                                                    <span> 50</span>
+                                                </td>
+                                                <td colspan="2">
+                                                    <span class="strong">Complemento: </span>
+                                                    <span> Lorem ipsum dolor </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="1">
+                                                    <span class="strong">UF: </span>
+                                                    <span>SP</span>
+                                                </td>
+                                                <td colspan="3">
+                                                    <span class="strong">Cidade: </span>
+                                                    <span>São Paulo</span>
+                                                </td>
+                                                <td colspan="2">
+                                                    <span class="strong">CEP: </span>
+                                                    <span>05500-000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <span class="strong">E-mail: </span>
+                                                    <span> xpto@xptoltda.com.br</span>
+                                                </td>
+                                                <td colspan="2">
+                                                    <span class="strong">Telefone/SAC: </span>
+                                                    <span> (11) 99999-9999</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="title text-uppercase strong">
+                                                <td colspan="6">
+                                                    Subestipulante 1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"><span class="strong">00.00-0-00</span> - <span> xxxxxxxxxx</span></td>
+                                                <td colspan="2">Seguro Transf. de Seguradora</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    <span class="strong">Endereço: </span>
+                                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+                                                </td>
+                                                <td >
+                                                    <span class="strong">Nº: </span>
+                                                    <span> 50</span>
+                                                </td>
+                                                <td colspan="2">
+                                                    <span class="strong">Complemento: </span>
+                                                    <span> Lorem ipsum dolor </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="1">
+                                                    <span class="strong">UF: </span>
+                                                    <span>SP</span>
+                                                </td>
+                                                <td colspan="3">
+                                                    <span class="strong">Cidade: </span>
+                                                    <span>São Paulo</span>
+                                                </td>
+                                                <td colspan="2">
+                                                    <span class="strong">CEP: </span>
+                                                    <span>05500-000</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <span class="strong">E-mail: </span>
+                                                    <span> xpto@xptoltda.com.br</span>
+                                                </td>
+                                                <td colspan="2">
+                                                    <span class="strong">Telefone/SAC: </span>
+                                                    <span> (11) 99999-9999</span>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr class="title text-uppercase strong">
+                                                <td colspan="6">
+                                                    Informações de contratação
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr class="subtitle">
+                                                <td colspan="4"><span class="strong text-primary">Estipulante:</span> <span>XPTO LTDA</span></td>
+                                                <td colspan="2"><span class="strong text-primary">CNPJ: </span> <span>60.635.374/0001-04</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="ticket-item">
+                                                        <span class="strong small text-primary ">Segmento/Atividade: </span>   
+                                                        <div class="ticket-subitem mt-1">
+                                                            <span>Lorem ipsum dolor</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2"> 
+                                                    <div class="ticket-item">
+                                                        <span class="strong small text-primary ">Grupo Segurado: </span> 
+                                                        <div class="ticket-subitem mt-1">
+                                                            <span>XXXXXX</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td >
+                                                    <div class="ticket-item">
+                                                        <span class="strong small text-primary ">Quantidade de vidas</span>
+                                                        <div class="ticket-subitem mt-1">
+                                                            <span>490</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="ticket-item">
+                                                        <span class="strong small text-primary ">Capital Global TOTAL:</span>
+                                                        <div class="ticket-subitem mt-1">
+                                                            R$ <Span> 5.000.000,00</Span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="text-uppercase strong text-primary text-center">
+                                                    Coberturas contratadas
+                                                </td>
+                                                <td colspan="2" class="text-center strong text-primary text-uppercase">
+                                                   
+                                                    Limite Máximo de indenização
+                                                </td>
+                                                <td class="text-center text-primary strong text-uppercase">
+                                                    Prêmio
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    Morte
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    Morte Acidental
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    Despesas Médicas, Hospitalares e Odontológicas decorrentes de acidente
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    doenças Graves
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    Invalidez Funcional Permanente Total por Doenças - Autônoma
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="center">
+                                                   <span class="text-uppercase  text-primary strong center">Prêmio Total da Coberturas</span>
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right"> -</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right"> </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="6">
+                                                    <span class="strong">Carência</span>
+                                                    <div class="ticket-subitem mt-1">
+                                                        Período durante o qual, na ocorrência do sinistro, o <span class="text-uppercase">Segurado</span> ou os beneficiários não terão direito à percepção dos capitais <span class="text-uppercase">Segurados</span> contratados. 
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="text-uppercase strong text-primary text-center">
+                                                    Coberturas contratadas
+                                                </td>
+                                                <td  class="text-center strong text-primary text-uppercase">
+                                                   
+                                                    Carência
+                                                </td>
+                                                <td class="text-center text-primary strong text-uppercase">
+                                                    Franquia
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    Despesas Médicas, Hospitalares e Odontológicas decorrente de acidente
+                                                </td>
+                                                <td>
+                                                    <span class="pull-right"> - </span>
+                                                </td>
+                                                <td>
+                                                    <span class="pull-right"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    Invalidez Funcional Permanente Total por Doença – Autônoma
+                                                </td>
+                                                <td>
+                                                    <span class="pull-right"> - </span>
+                                                </td>
+                                                <td>
+                                                    <span class="pull-right"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="text-uppercase strong text-primary text-center">
+                                                   Assistências e Capitalização
+                                                </td>
+                                                <td colspan="2" class="text-center strong text-primary text-uppercase">                                               
+                                                    Custo                                                
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    
+                                                </td>
+                                                <td colspan="2">
+                                                     R$ <span class="pull-right"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    
+                                                </td>
+                                                <td colspan="2">
+                                                     R$ <span class="pull-right"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="text-uppercase strong text-primary text-center">
+                                                   Limite Máximo de garantia da Apólice -LMG
+                                                </td>
+                                                <td colspan="2" class="strong text-primary text-uppercase">
+                                                   
+                                                   R$ <span class="pull-right"> - </span>
+                                                </td>
+                                                
+                                            </tr>
+    
+                                            <tr class="subtitle">
+                                                <td colspan="4"><span class="strong text-primary">Subestipulante 1:</span> <span>XPTO LTDA</span></td>
+                                                <td colspan="2"><span class="strong text-primary">CNPJ: </span> <span>60.635.374/0001-04</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="ticket-item">
+                                                        <span class="strong small text-primary ">Segmento/Atividade: </span>   
+                                                        <div class="ticket-subitem mt-1">
+                                                            <span>Lorem ipsum dolor</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2"> 
+                                                    <div class="ticket-item">
+                                                        <span class="strong small text-primary ">Grupo Segurado: </span> 
+                                                        <div class="ticket-subitem mt-1">
+                                                            <span>XXXXXX</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td >
+                                                    <div class="ticket-item">
+                                                        <span class="strong small text-primary ">Quantidade de vidas</span>
+                                                        <div class="ticket-subitem mt-1">
+                                                            <span>490</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="ticket-item">
+                                                        <span class="strong small text-primary ">Capital Global TOTAL:</span>
+                                                        <div class="ticket-subitem mt-1">
+                                                            R$ <Span> 5.000.000,00</Span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="text-uppercase strong text-primary text-center">
+                                                    Coberturas contratadas
+                                                </td>
+                                                <td colspan="2" class="text-center strong text-primary text-uppercase">
+                                                   
+                                                    Limite Máximo de indenização
+                                                </td>
+                                                <td class="text-center text-primary strong text-uppercase">
+                                                    Prêmio
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    Morte
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    Morte Acidental
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    Despesas Médicas, Hospitalares e Odontológicas decorrentes de acidente
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    doenças Graves
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    Invalidez Funcional Permanente Total por Doenças - Autônoma
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right">2.000,00</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="center">
+                                                   <span class="text-uppercase  text-primary strong center">Prêmio Total da Coberturas</span>
+                                                </td>
+                                                <td colspan="2">
+                                                    R$ <span class="pull-right"> -</span>
+                                                </td>
+                                                <td>
+                                                    R$ <span class="pull-right"> </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="6">
+                                                    <span class="strong">Carência</span>
+                                                    <div class="ticket-subitem mt-1">
+                                                        Período durante o qual, na ocorrência do sinistro, o <span class="text-uppercase">Segurado</span> ou os beneficiários não terão direito à percepção dos capitais <span class="text-uppercase">Segurados</span> contratados. 
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="text-uppercase strong text-primary text-center">
+                                                    Coberturas contratadas
+                                                </td>
+                                                <td  colspan="2" class="text-center strong text-primary text-uppercase">
+                                                   
+                                                    Carência
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    Despesas Médicas, Hospitalares e Odontológicas decorrente de acidente
+                                                </td>
+                                                <td colspan="2" class="text-center">
+                                                    <span  > - </span>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    Invalidez Funcional Permanente Total por Doença - Autônoma
+                                                </td>
+                                                <td colspan="2" class="text-center">
+                                                    <span colspan="2"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="text-uppercase strong text-primary text-center">
+                                                   Assistências e Capitalização
+                                                </td>
+                                                <td colspan="2" class="text-center strong text-primary text-uppercase">                                               
+                                                    Custo                                                
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    
+                                                </td>
+                                                <td colspan="2">
+                                                     R$ <span class="pull-right"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">
+                                                    
+                                                </td>
+                                                <td colspan="2">
+                                                     R$ <span class="pull-right"> - </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="text-uppercase strong text-primary text-center">
+                                                   Limite Máximo de garantia da Apólice -LMG
+                                                </td>
+                                                <td colspan="2" class="strong text-primary text-uppercase">
+                                                   
+                                                   R$ <span class="pull-right"> - </span>
+                                                </td>
+                                                
+                                            </tr>
+    
+                                            <tr class="title">
+                                                <td class="text-center">
+                                                    <div class="ticket-item">
+                                                       <span class="strong  text-white">Prêmio liquido: </span> 
+                                                        <div class="ticket-subitem mt-2">
+                                                           <small class="text-white pull-left">R$</small>
+                                                           <span class="pull-right">5.000.000,00</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+    
+                                                <td class="text-center">
+                                                    <div class="ticket-item">
+                                                        <span class="strong text-white">IOF: </span> 
+                                                        <div class="ticket-subitem mt-2">
+                                                           <small class="text-white pull-left">R$</small>
+                                                           <span class="pull-right">43,84</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                
+                                                <td class="text-center">
+                                                    <div class="ticket-item">
+                                                        <span class="strong  text-white">Prêmio Total: </span> 
+                                                        <div class="ticket-subitem mt-2">
+                                                           <small class="text-white pull-left">R$</small>
+                                                           <span class="pull-right">5.000.00</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td colspan="2" class="text-center">
+                                                    <div class="ticket-item">
+                                                        <span class="strong  text-white">Forma de pagamento: </span> 
+                                                        <div class="ticket-subitem mt-2">
+                                                           <span>Mensal</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">
+                                                    <div class="ticket-item">
+                                                        <span class="strong  text-white">Vencimento: </span> 
+                                                        <div class="ticket-subitem mt-2">   
+                                                           <span>10</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td colspan="6">
+                                                    Informamos, em atendimento à lei 12.741/2012, que além do IOF incluído no prêmio deste seguro, incidem na taxa, também, as alíquotas de 0,65% de PIS/PASEP e 4% de COFINS, com as deduções estabelecidas em legislação específica.
+                                                </td>
+                                            </tr>
+    
+                                            <tr>
+                                                <td colspan="2" class="strong text-primary">
+                                                    Cosseguradora
+                                                </td>
+                                                <td colspan="2" class="strong text-primary">
+                                                    Nossa parte
+                                                </td>
+                                                <td colspan="2" class="strong text-primary">
+                                                    %
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                                <td colspan="2"></td>
+                                                <td colspan="2"></td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td colspan="6">
+                                                    Declaro, na qualidade de Corretor (a) na presente proposta de seguro, que, em cumprimento à legislação vigente, cumpri integralmente as disposições contidas na Resolução CNSP nº 382/2020, inclusive quanto à prévia disponibilização ao proponente das informações previstas no art. 4º, § 1º, da referida Resolução.
+                                                </td>
+                                            </tr>
+                                            <tr class="subtitle">
+                                                <td colspan="6" class="center">
+                                                    <span class="strong text-primary">Dados dos intermediários:</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        Corretor:
+                                                    </span>
+                                                    <span></span>
+                                                </td>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        Código SUSEP:
+                                                    </span>
+                                                    <span></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        E-mail:
+                                                    </span>
+                                                    <span></span>
+                                                </td>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        Telefone / SAC:
+                                                    </span>
+                                                    <span></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        E-Co-corretor:
+                                                    </span>
+                                                    <span></span>
+                                                </td>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        Código SUSEP:
+                                                    </span>
+                                                    <span></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        E-mail:
+                                                    </span>
+                                                    <span></span>
+                                                </td>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        Telefone / SAC:
+                                                    </span>
+                                                    <span></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        Estipulante / Subestipulante:
+                                                    </span>
+                                                    <span></span>
+                                                </td>
+                                                <td colspan="3">
+                                                    <span class="strong">
+                                                        Remuneração:
+                                                    </span>
+                                                    <span class="pull-right"><span> </span> %</span>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table><!--table-->
+                                </div>
+                            </div>
+    
+                            <div class="row mt-5">
+                              
+    
+                                <div class="col-sm-12 no-screen print ">
+    
+                                    <div class="col-sm-12">
+                                        <p>O proponente acima identificado, autoriza a <span class="text-uppercase">Companhia de Seguros Aliança da Bahia</span>  a emitir a respectiva apólice de seguro do produto <span class="text-uppercase">VIDA CAPITAL GLOBAL</span>, declarando, neste ato, que tomou ciência, por si e pelos segurados, das Condições Contratuais anexadas à presente proposta, e disponíveis no site da seguradora <a href="https://www.alba.com.br">www.alba.com.br</a>.</p>
+        
+        
+                                        <p class="mt-3 strong">Informações ao Proponente</p>
+                                        
+                                        <ul class="toppings-list mt-2">
+                                            <li>
+                                                Sendo este seguro contratado por meio remoto o Proponente poderá desistir do contrato no prazo de até 7 (sete) dias corridos a contar da data da sua contratação
+                                            </li>
+                                            <li>
+                                                Fica garantido ao Proponente a possibilidade de impressão deste documento e, a qualquer tempo, o fornecimento de sua versão física, mediante solicitação à Seguradora.
+                                            </li>
+                                            <li>
+                                                Para registro de reclamações dos consumidores pessoas físicas, deverá ser utilizada a plataforma digital oficial <a href=" https://www.consumidor.gov.br"> https://www.consumidor.gov.br</a>.
+                                            </li>
+                                            <li>
+                                                As Condições Contratuais deste seguro Vida Capital Global podem ser acessadas pelo interessado diretamente no sítio eletrônico desta seguradora - <a href="https://www.alba.com.br">www.alba.com.br</a> como também no sítio eletrônico da SUSEP <a href="https://www.gov.br/susep/pt-br">https://www.gov.br/susep/pt-br</a>, através do nº do Processo Administrativo <span class="strong"> 15414.604347/2023-36</span> - SAC SUSEP <a href="tel:08000218484">0800 021 8484</a>
+                                            </li>
+                                            <li>
+                                                O Proponente declara que tomou ciência da íntegra das Condições Contratuais deste seguro previamente à sua contratação.
+                                            </li>
+                                        </ul>
+                                        
+                                        
+                                        <p class="mt-5">
+                                            <span>Salvador</span>, <span> 14 de Fevereiro de 2023</span>
+                                        </p>
+    
+                                       
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <div class="line strong">
+                                                <hr class="strong"/>
+                                                <h5 class="text-center ">Proponente</h5>
+                                            </div>
+                                        </div>
+    
+                                        <div class="col-md-6">
+                                            <div class="line strong">
+                                                <hr class="strong"/>
+                                                <h5 class="text-center">Corretor (a)</>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+    
+                                    <h3 class="text-primary text-uppercase mt-u">Regulamento do sorteio</h3>
+    
+                                    <h4 class=" text-uppercase">Regulamento da Promoção Comercial - Capitalização</h4>
+                                    <p>
+                                        A <span>Europ Assistance Brasil Serviços de Assistência S/A</span>, inscrita no CNPJ sob o nº <span class="strong">01.020.029/0001-06</span> , é subscritora de títulos de capitalização, da modalidade incentivo, administrados pela <span class="strong">Icatu Capitalização S/A</span>, aqui denominada <span class="strong">Icatu</span>, inscrita no CNPJ sob o nº <span class="strong">74.267.170/0001-73</span>, cujas condições gerais e suas notas técnicas foram aprovadas pela Superintendência de Seguros Privados - SUSEP, conforme processo(s) nº(s) <span class="strong">15414.900362/2019-26</span>.
+                                    </p>
+    
+                                    <p>
+                                        Esta promoção comercial será realizada em todo território nacional, terá início em <span>23/01/2023</span>  e vigorará <span> por prazo indeterminado</span>. (data a confirmar)
+                                    </p>
+    
+                                    <p>
+                                        Ao contratar o Seguro, o contratante terá direito a participação no Sorteio vinculado em um dos títulos subscritos de acordo com as condições estabelecidas neste regulamento. O sorteio será mensal no valor de R$<span>5.000,00</span>, sobre o qual incidiu <span>25</span>% (<span>vinte e cinco por cento</span>) de Imposto de Renda, conforme legislação vigente.
+                                    </p>
+    
+                                    <p>
+                                        A participação nos sorteios iniciará a partir do 2º mês subsequente à contratação da Seguro e os sorteios serão apurados com base nas extrações da Loteria Federal do Brasil no <span>último sábado de cada mês</span>, devendo ser observadas as regras estabelecidas neste regulamento. Não ocorrendo extração da Loteria Federal em uma das datas previstas, o sorteio correspondente será adiado para a primeira extração após a última data de sorteio constante no título. Os resultados da Loteria Federal do Brasil poderão ser acompanhados por meio do site: <a href=" https://loterias.caixa.gov.br/Paginas/Federal.aspx"> https://loterias.caixa.gov.br/Paginas/Federal.aspx</a>, bem como em todas as Casas Lotéricas do Brasil. O participante contemplado será comunicado pelo canal de atendimento da <span class="text-uppercase">Alba SEGURADORA</span>. O ganhador também será divulgado no site da <a href="https://www.alba.com.br">www.alba.com.br</a> em até 15 dias a partir da data do sorteio.
+                                    </p>
+    
+                                    <p>
+                                        Será contemplado o Contratante possuidor da combinação numérica vinculada ao   título de capitalização sorteado, vigente na data do sorteio, aqui denominado Número da Sorte, informado no Bilhete/Certificado de Seguro/Apólice, que coincida com o número composto de cinco algarismos lidos de cima para baixo, da coluna formada pelo algarismo da unidade simples dos 5 primeiros prêmios da Extração da Loteria Federal, conforme o exemplo a seguir:
+                                    </p>
+    
+    
+                                    <ul class="award mt-4 ml-4 mb-0">
+                                        <li>
+                                            1º prêmio: <span>32.26</span> &nbsp;&nbsp;<span class="strong">3</span>
+                                        </li>
+                                        <li>
+                                            2º prêmio: <span>34.57</span> &nbsp;<span class="strong">8</span>
+                                        </li>
+                                        <li>
+                                            3º prêmio: <span>89.07</span> &nbsp;<span class="strong">0</span>
+                                        </li>
+                                        <li>
+                                            4º prêmio: <span>51.94</span> &nbsp;<span class="strong">4</span>
+                                        </li>
+                                        <li>
+                                            5º prêmio: <span>44.37</span> &nbsp;<span class="strong">9</span>
+                                        </li>
+                                        <li class="strong">Combinação sorteada: <span>38.049</span></li>
+                                    </ul>
+                                
+    
+                                    <p class="mt-3 strong">É proibida a aquisição de título de capitalização para menores de 16 anos, conforme o Art. 3º do Código Civil.</p>
+    
+                                    <h3 class="text-primary text-uppercase mt-4 mb-3">Características do Seguro</h3>
+                                    <ol class="mb-3 mt-2">
+                                        <li class="mb-3">
+                                            <span class="text-primary strong text-uppercase mb-3">Informações preliminares</span>                                    
+                                            <ol class="mt-3">
+                                                <li>
+                                                    O registro deste produto é automático e não representa aprovação ou recomendação por parte da Superintendência de Seguros Privados - SUSEP.   
+                                                </li>
+                                                <li>
+                                                    A Contratação deste Seguro é opcional, sendo facultado ao SEGURADO o seu cancelamento qualquer tempo, com devolução do prêmio pago referente ao período a decorrer, se houver.
+                                                </li>
+                                                <li>
+                                                    A aceitação deste seguro está sujeita à análise do risco.
+                                                </li>
+                                                <li>
+                                                    O <span class="text-uppercase">Segurado</span> poderá consultar a situação cadastral de seu corretor de seguros, no site <a href="https://www.susep.gov.br"> www.susep.gov.br</a>, por meio do número de seu registro na SUSEP, nome completo, CNPJ ou CPF. 
+                                                </li>
+                                                <li>
+                                                    Na contratação por meios remotos o  <span class="text-uppercase">Segurado</span> poderá desistir do contrato do seguro no prazo de até 7 (sete) dias corridos a contar da data da sua adesão ao seguro. 
+                                                </li>
+                                                <li>
+                                                    A utilização de meios remotos na emissão da apólice garante ao <span class="text-uppercase">Segurado</span> a possibilidade de impressão do documento e, a qualquer tempo, o fornecimento de sua versão física, mediante solicitação à <span class="text-uppercase">Seguradora</span>.
+                                                </li>
+                                                <li>
+                                                    O registro deste produto é automático e não representa aprovação ou recomendação por parte da Superintendência de Seguros Privados - SUSEP.
+                                                </li>
+                                                <li>
+                                                    Para sinistros, o Segurado poderá entrar em contato pelo telefone <a href="tel:08007705549">0800 770 5549</a>  (atendimento de segunda a sexta, das 8h às 20h e aos sábados, das 8h às 17h, exceto feriados) ou pelo  <strong>SAC <a href="tel:08007251105">0800 725 1105</a></strong>  (atendimento todos os dias, 24 horas por dia) ou por meio do <strong>endereço eletrônico</strong>   <a href="mailto:atendimento@alba.com.br">atendimento@alba.com.br</a>. 
+                                                    Para atendimento à pessoa com deficiência auditiva ou de fala, o segurado deverá enviar mensagem para o <strong> WhatsApp <a href="tel:1143697171">(11) 4369-7171</a></strong>  ou através do <strong>Chat</strong> no site <a href="www.alba.com.br">www.alba.com.br</a> (atendimento todos os dias, 24 horas por dia) ou ainda para o endereço eletrônico <a href="mailto:atendimento_def@alba.com.br">atendimento_def@alba.com.br</a>. Caso o Segurado possua um número de protocolo do SAC sem solução satisfatória, poderá contestar na Ouvidoria através do  <strong>telefone</strong>  <a href="tel:08007251071">0800 725 1071</a>  (atendimento de segunda a sexta, das 7h às 20h, exceto feriados). 
+                                                </li>
+                                                <li>
+                                                    Para registro de reclamações dos consumidores pessoas físicas, deverá ser utilizada a plataforma digital oficial: <a href="mailto:https://www.consumidor.gov.br">https://www.consumidor.gov.br</a> .  
+                                                </li>
+                                                <li>
+                                                    Suas informações estão protegidas pela Lei Geral de Proteção de Dados, sendo elas usadas exclusivamente para fins do presente contrato, considerando a finalidade exclusiva dos serviços descritos no item 4, respeitando o disposto na Lei nº 13.709/2018 - (LGPD). A Companhia de Seguros SEGURADORA zela pelos seus dados e informações constantes em seu banco de dados, adotando medidas técnicas, administrativas e organizacionais adequadas, de modo a garantir a segurança de seus dados pessoais. 
+                                                </li>                                        
+                                            </ol>
+                                        </li>
+                                        
+                                        <li class="mb-3">
+                                            <span class="text-primary strong text-uppercase mt-2 mb-3">Objetivo do Seguro</span>
+                                            <ol class="mb-3 mt-3">
+                                                <li>O presente seguro tem por objetivo garantir, de acordo com a(s) Cobertura(s) constante(s) no <span class="text-uppercase"> Contrato coletivo</span>, indicada(s) nas Propostas de Contratação, o pagamento do <span class="text-uppercase">Capital Seguradora</span> ao próprio SEGURADO ou ao(s) seu(s) <span class="text-uppercase">beneficiário(s)</span>, em função da ocorrência de evento coberto, durante o período de <span class="text-uppercase">Vigência da Apólice</span> Coletiva e mediante o pagamento do Prêmio correspondente, respeitado o disposto nestas Condições Gerais, nas Condições Especiais e nas disposições legais aplicáveis. </li>
+    
+                                                <li>O Prêmio deste seguro é integralmente pago pelo <span class="text-uppercase">Estipulante</span>, não havendo qualquer contribuição dos SEGURADOS. O presente plano de seguro denomina-se plano de seguro de custeio não contributário.</li>
+    
+                                                <li>Este plano é do tipo de contratação coletiva.</li>
+                                            </ol>
+                                        </li>
+    
+                                        <li class="mb-3">
+                                            <span class="text-primary strong text-uppercase mt-2 mb-3">Coberturas</span>
+                                            <ol class="mt-3">
+                                                <li>
+                                                    <span class="mt-2">
+                                                        As coberturas passíveis de contratação para este plano de seguro são as abaixo mencionadas, respeitadas as conjugações oferecidas pela <span class="text-uppercase">Segurado</span> e os riscos excluídos destas Condições Gerais e das respectivas Condições Especiais:
+                                                    </span>
+                                                    <ol class="mb-2">
+                                                        <li class="strong">Cobertura de Morte - M</li>
+                                                        <li class="strong">Cobertura de Morte Acidental - MA </li>
+                                                        <li class="strong">Cobertura de Invalidez Permanente Total ou Parcial por Acidente - IPTA </li>
+                                                        <li class="strong">Cobertura Autônoma de Invalidez Funcional Permanente Total por Doença  - IFPD </li>
+                                                        <li class="strong">Cobertura de despesas Médico-Hospitalares e Odontológicas por Acidente (DMHO)</li>
+                                                        <li class="strong">Cobertura deCobertura de Doenças Graves - DG </li>
+                                                        <li class="strong"> Cobertura de Rescisão Trabalhista por Morte - RT</li>
+                                                        <li class="strong">Cobertura de Rescisão Trabalhista por Morte Acidental - RTA </li>
+                                                        <li class="strong">Cobertura Suplementar de Inclusão de Cônjuge de Forma Automática</li>
+                                                        <li class="strong">Cláusula Suplementar de Inclusão de Filhos de Forma Automática</li>
+                                                    </ol>
+                                                </li> 
+                                                <li class="text-uppercase">
+                                                    Para caracterização e comercialização deste plano como contrato de seguro de vida, obrigatoriamente deverá ser contratada a cobertura de morte. 
+                                                </li>
+                                                <li class="text-uppercase">
+                                                    Para efeito de aceitação e inclusão de componentes no seguro, deverá ser observado o limite de 70 (setenta) anos de idade para adesão, salvo se a seguradora expressamente aceitar a adesão de pessoa com idade superior. 
+                                                </li>
+                                                <li>
+                                                    A definição de cada uma das coberturas mencionadas nestas condições gerais, seus respectivos objetivos, seus riscos excluídos específicos, <span class="text-uppercase">capital segurado/capitais segurados</span> e demais disposições estão determinados nas respectivas condições especiais
+                                                </li>
+                                            </ol>
+                                        </li>
+    
+                                        <li>
+                                            <span class="text-primary strong text-uppercase mt-2 mb-3">Risco Excluídos</span>
+                                            <ol class="mb-3 mt-2">
+                                                <li class="strong">
+                                                    Os riscos excluídos aplicados a este seguro estão na íntegra, disponiveis no sitio eletrônico em <a href="https://www.alba.com.br.">www.alba.com.br.</a> recomendamos a leitura na íntegra.
+                                                </li>                                            
+                                            </ol>
+                                        </li>
+    
+                                        <li>
+                                            <span class="text-primary strong text-uppercase mt-2 mb-3">Perda de direitos</span>
+                                            <ol class="mb-3 mt-2">
+                                                <li class="strong">
+                                                    As hipóteses de perda de direitos previstas nesta claúsula, estão disponíveis na íntegra no sítio eletrônico <a href="https://www.alba.com.br.">www.alba.com.br.</a> recomendamos a leitura na íntegra.
+                                                </li>                                            
+                                            </ol>
+                                        </li>
+    
+    
+                                        <li class="mb-3">
+                                            <span class="text-primary strong text-uppercase mt-2 mb-3">Âmbito geográfico das coberturas</span>
+                                            <ol class="mb-3 mt-2">
+                                                <li>
+                                                    As Coberturas Contratadas serão aplicáveis em âmbito geográfico mundial.
+                                                </li>
+                                            </ol>
+                                        </li>
+    
+                                        <li class="mb-3">
+                                            <span class="text-primary strong text-uppercase mt-2 mb-3">Grupo segurável</span>
+                                            <ol lass="mb-3 mt-2">
+                                                <li class="mt-3">
+                                                    É facultada à <span>Seguradora</span> a solicitação, a qualquer tempo, de apresentação de documentação que comprove as condições estabelecidas para a configuração dos clientes como <span class="text-uppercase">segurados</span> Titulares ou <span class="text-uppercase">segurados</span> Dependente, ou para seu enquadramento dentro do Grupo Segurável ou do Grupo <span class="text-uppercase">segurado</span>, bem como outros documentos que julgar necessários. 
+                                                </li>
+                                            </ol>
+                                        </li>
+    
+                                        <li class="mb-3">
+                                            <span class="text-primary strong text-uppercase mt-2 mb-2">Grupo segurado</span>
+                                            <ol class="mb-3 mt-2">
+                                                <li class="mt-3">
+                                                    É o conjunto dos componentes do Grupo Segurável, desde que elegíveis e devidamente aceitos e incluídos na <span class="text-uppercase">Apólice</span> coletiva, cuja(s) cobertura(s) contratada(s) esteja(m) em vigor, observando-se as situações previstas nas Cláusulas 18 (Inclusão de <span class="text-uppercase">segurados</span>) e 19 (Condição para Aceitação Individual de <span class="text-uppercase">segurados</span>) das Condições Contratuais. 
+                                                </li>
+                                            </ol>
+                                        </li>
+    
+                                        <li class="mb-3">
+                                            <span class="text-primary strong text-uppercase mt-2 mb-2">Custeio do Seguro / Adesão</span>
+                                            <ol class="mb-3 mt-2">
+                                                <li>
+                                                    Em relação ao custeio e de acordo com a <span class="text-uppercase">proposta de contratação</span>, este seguro é <u class="strong">Não Contributário</u>, ou seja, os SEGURADOS não pagam o <span class="text-uppercase">Prêmio</span>, recaindo o ônus de seu pagamento <span class="strong">integralmente</span> sobre o <span class="text-uppercase">Estipulante</span>. Nesta modalidade de seguro todos os componentes do Grupo Segurável serão incluídos no <span class="text-uppercase">contrato coletivo</span>, excetuando-se apenas as pessoas não aceitas no seguro ou impedidas de serem seguradas.
+                                                </li>
+                                                <li>
+                                                    O <span class="text-uppercase">estipulante</span> e <span class="text-uppercase">subestipulante</span>, se houver, sempre será responsável pela quitação dos <span class="text-uppercase">prêmios</span> devidos.
+                                                </li>
+                                            </ol>
+                                        </li>
+    
+                                        <li class="mb-3">
+                                            <span class="text-primary strong text-uppercase mt-2 mb-2">Pagamento do prêmio</span>
+                                            <ol class="mb-3 mt-2">
+                                                <li>
+                                                    A cobrança do  <span class="text-uppercase">prêmio</span>PRÊMIO será efetuada por meios de pagamento disponíveis pela rede bancária, inclusive por meio eletrônico ou por meio de documento emitido pela <span class="text-uppercase">seguradora</span>.
+                                                </li>
+                                                <li>
+                                                    1No caso de que seja opção do <span class="text-uppercase">estipulante</span> ou <span class="text-uppercase">subestipulante</span> por meio de documento de cobrança a que se refere o subitem 26.1 desta Cláusula, será encaminhado diretamente ao <span class="text-uppercase">estipulante</span> ou ao seu representante legal, ou, ainda, por expressa solicitação de qualquer um destes, ao intermediário de seguros, observada a antecedência mínima de 5 (cinco) dias úteis, em relação à data do respectivo vencimento. 
+                                                </li>
+                                                <li>
+                                                    O <span class="text-uppercase">estipulante</span> ou <span class="text-uppercase">subestipulante</span> poderá optar pelo pagamento dos PRÊMIOS de forma mensal, bimestral, trimestral, quadrimestral, semestral ou anual, conforme critérios definidos no Contrato Coletivo e na Proposta de Contratação, e cada pagamento será correspondente a um determinado Período de Cobertura.
+                                                    <ol class="mt-2 mb-2">
+                                                        <li>O pagamento realizado na forma acima não caracteriza fracionamento do <span class="text-uppercase">prêmio</span>.</li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    Caso o <span class="text-uppercase">Estipulante</span>  opte pelo pagamento dos <span class="text-uppercase">prêmios</span> de forma mensal, cada pagamento será correspondente a um mês de cobertura. Na hipótese de rescisão do presente contrato, em que o <span class="text-uppercase">Estipulante</span> pague os <span class="text-uppercase">prêmio</span> mensalmente, nenhuma devolução de PRÊMIO será devida.
+                                                </li>
+                                                <li>
+                                                    Na hipótese de pagamento de <span class="text-uppercase">Prêmio</span> único ou de periodicidade anual, o <span class="text-uppercase">capital</span> Seguro pagável por morte ou invalidez será atualizado pelo índice previsto no subitem 19.2 das Condições Contratuais até a data de ocorrência do evento gerador, sendo que nos casos de periodicidade anual, serão contados desde a última atualização.
+                                                </li>
+                                                <li>
+                                                    Qualquer que seja a forma de pagamento do PRÊMIO adotada, a <span class="text-uppercase">seguradora</span> ficará obrigada a manter registro das datas das operações realizadas.
+                                                </li>
+                                                <li>
+                                                    O pagamento do <span class="text-uppercase">prêmio</span> será feito à <span class="text-uppercase">seguradora</span> por meio da rede bancária, débito em conta corrente ou outras formas admitidas em lei, acordadas previamente entre o <span class="text-uppercase">estipulante</span>  e a   <span class="text-uppercase">seguradora</span> na <span class="text-uppercase">proposta de contratação</span>.
+                                                    <ol class="mt-2 mb-2">
+                                                        <li>
+                                                            Quando o pagamento for efetuado por meio da rede bancária, deverá constar do documento de cobrança, se for o caso, a indicação de que o <span class="text-uppercase">PRÊMIO</span> poderá ser pago em qualquer agência do mesmo ou de outros bancos.
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    Se a data do vencimento do <span class="text-uppercase">prêmio</span> coincidir com dia em que não haja expediente bancário, o pagamento poderá ser efetuado no primeiro dia útil em que houver expediente bancário. 
+                                                </li>
+                                                <li>
+                                                    O não pagamento até a data convencionada resultará na cobrança de juros de mora de 6% ao ano e atualização monetária com base no índice IPCA-IBGE, calculados com base no período compreendido entre o dia de vencimento e a data do pagamento.
+                                                </li>
+                                                <li>
+                                                    A <span class="text-uppercase">seguradora</span> SEGURADORA providenciará aviso ao <span class="text-uppercase">estipulante</span>, mediante comunicação escrita, alertando acerca da inadimplência, no prazo máximo de 10 (dez) dias contados da data de vencimento da primeira parcela não paga.
+                                                    <ol class="mt-2 mb-2">
+                                                        <li class="strong">
+                                                            Não havendo a quitação da fatura até a data do vencimento, haverá tolerância de até 60 (sessenta) dias do vencimento para regularização dos <span class="text-uppercase">prêmios</span> em atraso, sem suspensão das Coberturas.
+                                                        </li>
+                                                        <li>
+                                                            Decorridos 60 (sessenta) dias contados da data de vencimento, sem que o <span class="text-uppercase">prêmio</span> tenha sido quitado, a APÓLICE e/ou o risco individual ficarão automaticamente e de pleno direito rescindidas, a partir do 61º (sexagésimo primeiro) dia de vencimento da fatura em atraso, independentemente de qualquer interpelação judicial ou extrajudicial, sem que caiba qualquer restituição de <span class="text-uppercase">prêmio</span> anterior, ficando o <span class="text-uppercase">estipulante</span> obrigado ao pagamento dos <span class="text-uppercase">prêmios</span> vencidos relativos ao Período de Cobertura.
+                                                        </li>
+                                                        <li class="strong">
+                                                            A falta de pagamento do <span class="text-uppercase">prêmio</span>, de qualquer parcela, por um período superior a 60 (sessenta) dias, independentemente de haver parcelas(s) em atraso intercalada(s) com parcela(s) paga(s), implicará no <span class="text-uppercase">cancelamento</span>  automático do seguro.
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li class="strong">
+                                                    Este seguro está estruturado sob Regime Financeiro de Repartição Simples, que não contempla o resgate ou a devolução de <span class="text-uppercase">PRÊMIOS</span>  pagos pelo <span class="text-uppercase">segurado</span> ou <span class="text-uppercase">estipulante</span>.
+                                                </li>
+    
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <span class="text-primary strong text-uppercase mb-2">Regulação de sinistro</span>
+                                            <ol class="mb-3 mt-2">
+                                                <li class="strong">
+                                                    O <span class="text-uppercase">segurado</span> ou seu(s) <span class="text-uppercase">beneficiário(s)</span> deverá(ão), diante da ocorrência de <span class="text-uppercase">sinistro</span>, proceder à comunicação imediata, por meio do <span class="text-uppercase">aviso de sinistro</span>, telegrama, carta registrada ou demais dispositivos disponibilizados dirigida à <span class="text-uppercase">seguradora</span>, indicando todas as circunstâncias a ele relacionadas.
+                                                    <ol class="mt-2 mb-2">
+                                                        <li class="strong">
+                                                            A comunicação feita por carta registrada ou telegrama não exonera a obrigação da apresentação do formulário <span class="text-uppercase">aviso de sinistro</span> original à <span class="text-uppercase">seguradora</span>, também de forma imediata à ocorrência do <span class="text-uppercase">sinistro</span>.
+                                                        </li>
+                                                        <li>
+                                                            Fica estabelecido o prazo de 30 (trinta) dias para finalização da regulação de <span class="text uppercase">sinistro</span> e pagamento do <span class="text-uppercase">capital segurado</span> eventualmente devido, contados a partir do recebimento pela <span class="text-uppercase">seguradora</span> de toda documentação básica constante da Cláusula 28 (Relação de Documentos para Liquidação de <span class="text-uppercase">sinistro</span>) e aqueles indicados nas Condições Especiais de cada cobertura contratada. 
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    Em caso de dúvida fundada e justificável, a SEGURADORA poderá solicitar ao(s) <span class="text-uppercase">beneficiário(s)</span> ou <span class="text-uppercase">segurado</span> outros documentos além daqueles estabelecidos na Cláusula 28 (Relação de Documentos para Liquidação de  <span class="text-uppercase">sinistro</span>) das Condições Gerais e seus subitens, inclusive informações ou esclarecimentos complementares. Nesse caso, o prazo mencionado no subitem 11.1.2 desta Cláusula será suspenso, voltando a correr a partir do dia útil subsequente ao recebimento pela  <span class="text-uppercase">SEGURADORA</span> dos documentos e informações complementares.
+                                                </li>
+                                                <li>
+                                                    Não respeitado o prazo previsto no subitem 11.1.2 desta Cláusula, os valores das obrigações pecuniárias devidas serão acrescidos de juros moratórios e atualização monetária, conforme definido nos subitens 11.2 e 11.4 desta Cláusula, aplicados a partir do primeiro dia posterior ao término do prazo previsto no subitem 11.1.2., independentemente de interpelação judicial.
+                                                    <ol class="mt-2 mb-2">
+                                                        <li>
+                                                            A atualização monetária será efetuada com base na variação apurada entre o último índice publicado antes da data da exigibilidade da obrigação pecuniária e aquele publicado antes da data de sua efetiva liquidação.
+                                                        </li>
+                                                        <li>
+                                                            A título de juros de mora, será utilizado o percentual de 6% (seis por cento) ao ano, calculado pro rata die desde o dia seguinte ao término do prazo previsto no subitem 11.1.2 até a data do efetivo pagamento. 
+                                                        </li>
+                                                    </ol> 
+                                                </li>
+                                                
+                                                <li>
+                                                    O pagamento do <span class="text-uppercase">capital segurado</span> devido será feito por meio de crédito em conta, ordem de pagamento ou cheque nominal, pagável no domicílio ou praça indicada pelo (s) <span class="text-uppercase">beneficiário(s)</span> ou <span class="text-uppercase">segurado</span> no <span class="text-uppercase">aviso de sinistro</span>.
+                                                </li>
+                                                <li>
+                                                    As despesas efetuadas com a comprovação do <span class="text-uppercase">sinistro</span> e os documentos necessários serão de responsabilidade do <span class="text-uppercase">segurado</span> e/ou Beneficiário, salvo as diretamente realizadas pela <span class="text-uppercase">seguradora</span>.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        
+    
+    
+                                        <li class="mb-3">
+                                            <span class="text-primary strong text-uppercase mb-2">Ratificação</span>
+                                            <ol class="mb-3 mt-2">
+                                                <li class="mt-3 strong">
+                                                    Ficam ratificados todos os termos das Condições Contratuais deste seguro <span class="text-uppercase">Vida Capital global</span>, que podem ser obtidas pelo Estipulante/Subestipulante, corretor do seguro, segurados e beneficiários, diretamente no sítio eletrônico desta Seguradora - <a href="https://www.alba.com.br">www.alba.com.br</a>, como também no sítio eletrônico da SUSEP <a href="https://www.gov.br/susep/pt-br">www.gov.br/susep/pt-br</a>, através do nº do Processo Administrativo .<span>15414.604347/2023-36</span>.
+                                                </li>
+                                                <li class="strong">
+                                                    As Condições Contratuais, no formato físico, podem ser solicitadas a esta Seguradora através do endereço eletrônico <a href="mailto:produtos@alba.com.br"> produtos@alba.com.br</a>.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        
+                                    </ol>
+                                   
+                                    
+                                </div> 
+    
+                            </div>
+                        </div> 
+                    </div><!-- Result Container -->
+
+                   
+                    <div class="row">
+
+                        <div class="col-sm-12 mt-4">
+                            <a href="anexarDocumentos.html" class="btn btn-primary btn-block icon-button text-uppercase">
+                                Assinatura Digital
+                                <i class="fas fa-file-contract ml-2 fa-lg"></i>
+                            </a>
+                        </div>
+
+                       
+                        <div class="col-md-3  col-sm-6 mt-4">
+                            <button class="btn btn-outline-primary btn-block ">
+                               Enviar por SMS
+                                <span class="fas fa-sms ml-2 "></span>
+                            </button>
+                        </div>
+                        <div class="col-md-3  col-sm-6 mt-4">
+                            <button class="btn btn-outline-primary btn-block ">
+                               Enviar por E-mail
+                                <span class="fas fa-envelope-square ml-2 "></span>
+                            </button>
+                        </div>
+                        <div class="col-md-3  col-sm-6 mt-4">
+                            <button id="Download_PDF" class="btn btn-outline-secondary btn-block icon-button">
+                                Baixar PDF
+                                <span class="fas fa-file-download ml-2 "></span>
+                            </button>
+                        </div>
+                        <div class="col-md-3  col-sm-6 mt-4">
+                            <a href="anexarDocumentos.html" class="btn btn-outline-secondary btn-block icon-button">
+                                Assinatura Física
+                                <span class="fas fa-file-signature ml-2 "></span>
+                            </a>
+                        </div>                        
+                        
+                        
+                    </div>
+
+                </div><!--content-page-->
+                
+            </div><!--Main-->
+
+            <div class="footer">
+                <div class="brand-footer">
+                    <img src="Assets/img/brand/Logo_Diretrix_Footer.png" alt="logo DiretrixOn" class="img-fluid">
+                </div><!--brand-footer-->
+                <div class="text-footer">
+                    <p>Todos os direitos reservados © 2022 Diretrix.On</p>
+                </div><!--text-footer-->
+            </div><!--footer-->
+        </div><!--wrapper-content-->
+    </div><!--wrapper-->
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+      <!-- Chosen -->
+    <script src="Assets/plugins/chosen/chosen.jquery.js"></script>
+    <script src="Assets/plugins/switchery/switchery.js"></script>
+      
+    <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js" integrity="sha256-u7MY6EG5ass8JhTuxBek18r5YG6pllB9zLqE4vZyTn4=" crossorigin="anonymous"></script>
+
+    <!-- print -->
+    <script src="Assets/plugins/print/print.js"></script>
+
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/js/apolice.js"></script>
+
+   
+</body>
+</html>

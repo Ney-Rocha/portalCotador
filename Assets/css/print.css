@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    background: transparent;
+    -webkit-print-color-adjust: exact; 
+    color: #000;
+    text-shadow: none; 
+    filter: none;
+   -ms-filter: none;
+   page-break-after: auto;
+}
+
+@page {
+    margin-left: 20mm;
+    margin-right: 20mm;
+    margin-top: 30mm;
+    margin-bottom: 30mm;
+    position: relative;
+    }
+
+
+@page :left {
+    margin-left: 20mm;
+    }
+@page :right {
+    margin-right: 20mm;
+    }
+
+.print {
+    display: block;
+}
+
+.no-print {
+    display: none!important;
+}
+.mb-4{
+    margin-bottom: 10px!important;
+}
+
+.tag-container{
+    display: block;
+}
+.tag{
+    background-color: transparent;
+    color:#000000;
+    border: none;
+    width: 100%;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.tag p{
+    font-size: 16px;
+}
+
+.brand-print{
+    width: 100px;
+    height: 70px;
+    margin: 30px auto;
+}
+
+
+.ticket-container{
+    -webkit-print-color-adjust: exact; 
+    width: 100%;
+    
+ }
+
+ .ticket{
+    width: 100%;
+    box-shadow: none;
+    border:1px solid #bababa!important;
+ }
+
+ 
+
+.ticket tr:nth-child(even) td{
+    background-color: #fff!important;
+    color:#000000;
+ }
+ 
+ .ticket tr:nth-child(odd) td{
+    background-color: #f3f3f3!important;
+    color:#000000;
+ }
+
+ .ticket tr.title td{
+    background-color: #2b2869!important;
+    border-right: 1px solid #bababa!important;
+    border-top: 1px solid #2b2869!important;
+    border-bottom: 1px solid #2b2869!important;
+    -webkit-print-color-adjust: exact; 
+    color:#fff!important;
+    border-collapse: collapse;
+ }
+
+ .ticket tr.title td:first-child{
+    border-left: 1px solid #2b2869!important;
+ }
+
+ .ticket tr.title td:last-child{
+    border-right: 1px solid #2b2869!important;
+ }
+
+ .ticket tr.subtitle td{
+    background-color: #cfd3dd!important;
+    border-right:1px solid #bababa!important;
+    border-top: 1px solid #cfd3dd!important;
+    border-bottom: 1px solid #cfd3dd!important;
+    color:#000000!important;
+ }
+
+ 
+
+ .ticket tr td{
+    border-right: 1px solid #bababa;
+    border-top: 1px solid #bababa;
+    color: #000000;
+    font-size: 15px;
+    vertical-align: middle;
+ }
+
+ .ticket tr td.ticket-list {
+    vertical-align: top;
+    border: 1px solid #d1d1d1;
+ }
+
+ 
+
+ .ticket tr.title td{
+    color: #fff;
+    font-size: 20px;
+    white-space: nowrap;
+ }
+
+ .ticket tr td.small{
+    font-size: 12px;
+    color: #000000;
+ }
+
+.toppings-title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+ .toppings-list{
+    margin: 0;
+    list-style: disc;
+    padding: 0 0 0 22px;
+ }
+ 
+ .toppings-list li{
+    margin-bottom: 12px;
+ }
+
+ .list-mb-1.toppings-list li{
+    margin-bottom: 5px;
+ }
+
+ .ticket-item,
+ .ticket-subitem,
+ .ticket-subitem span{
+       color:#000000;
+ }
+
+ .title .ticket-item,
+ .title .ticket-subitem,
+ .title .ticket-subitem span{
+       color:#fff;
+ }
+ .icon-finish{
+    font-size: 28px;
+    margin-bottom: 25px;
+
+ }
+
+ ol {
+   counter-reset: item;
+   padding-left: 15px;
+}
+ol li {
+   display: block;
+   margin-bottom:5px;
+}
+ol li:before {
+   content: counters(item, ".") ". ";
+   counter-increment: item;
+   padding-left: 15px;   
+}
+
+

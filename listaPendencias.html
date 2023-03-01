@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alba Seguradora</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor-150x150.png" sizes="150x150">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://www.alba.com.br/wp-content/uploads/2022/11/ico-alba-cor.png">
+
+       <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/fonts/fontawesome-free-5.14.0-web/css/all.css">
+    <!--Datatable-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+</head>
+<body>
+    
+    <header>
+        <div class="header_page_login bg-blue-middle">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-sm">
+                    <a href="index.html">
+                        <div class="brand_login">
+                            <img class="responsive_img" src="Assets/img/brand/Logo_Alba_header.png" alt="Logo Alba Seguradora" class="img-fluid">
+                        </div>
+                    </a> <!--link_brand-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nav-restrict">
+                            <div class=" dropdown">
+                                <a href="#" class="nav-link link-especial btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    <div class="brand-icon-profile">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="brand-data-profile">
+                                        <strong class=""> Corretor: &nbsp;</strong>
+                                         <span>Marcos</span>
+                                        <span class="ml-3 ">
+                                            <i class="fas fa-angle-down"> </i>
+                                        </span>
+                                    </div>
+                                    
+                                </a>
+                                <div class="dropdown-menu navbar-top-dropdown" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="data-user">
+                                            <i class="fa fa-user fa-fw"></i> Usuário
+                                            <span class="pull-right ">Marcos</span>                                        
+                                        </div>
+                                    </a>                                    
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-wifi fa-fw"></i> I.P
+                                        <span class="pull-right">187.75.227.19</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-unlock-alt fa-fw"></i> Senha
+                                        <span class="pull-right">Alterar</span>
+                                    </a>
+                                    <div class="dropdown-item-content"></div>
+                                    <a class="dropdown-item" href="login.html">
+                                        <i class="fa fa-sign-out-alt fa-fw"></i> 
+                                        <span class="pull-right">Sair</span>
+                                    </a>
+                                </div><!--dropdown-menu-->
+                            </div><!--dropdown-->
+                        </div>
+                    </div>
+                </nav>
+            </div><!--Container-->
+        </div><!--header_page_login-->
+    </header> <!--header-->
+
+    <div class="wrapper">
+        <div class="sidebar bg-blue-dark" id="sidebar">
+            <ul class="sidebar-menu" id="sidebar_menu">
+                <li class="item-menu">
+                    <a href="index.html">
+                        <div class="icon-menu">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="title-menu">
+                            Página Inicial
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="content-help bg-green">
+                <h3>Precisa de ajuda?</h3>
+                <p>
+                    Entre em contato com <br/> a nossa equipe de atendimento <br/>  no telefone <a href="tel:1130645693">(11) 3064-5693</a> ou no <br/>e-mail:  <a href="mailto:atendimento@diretrixon.com.br">atendimento@diretrixon.com.br</a>  
+                </p>
+            </div>
+            <div class="sidebar-control" id="sidebar_control">
+                <div class="button-sidebar">
+                    <div class="icon-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-content bg-white">
+            <div class="main">               
+                <div class="row">
+                    <div class="col-md-12 mb-5">
+                        <h3 class="mb-3">Pendências</h3>
+                        <p>Verifique os documentos  faltantes para continuidade do processo
+
+                        </p>
+                    </div><!--col-->
+                    <div class="col-12">
+                        <div class="">
+                            <div class="table-responsive table-responsive-sm table-apolices">
+                                <table id="tableApolices" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th class="center">Produto</th>
+                                            <th class="center">Nome estipulante</th>
+                                            <th class="center">CNPJ</th>
+                                            <th class="center">Data</th>
+                                            <th class="center">Nº contação</th>
+                                            <th class="center">Prêmio mensal</th>
+                                            <th class="center">Status</th>
+                                            <th class="center">Vizualizar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="finalizado">
+                                            <td class="center">
+                                                <div class="product product-global">Global</div>
+                                            </td>
+                                            <td class="center">Maria da Silva</td>
+                                            <td class="center">63.182.868/0001-70</td>
+                                            <td class="center">20/11/2022</td>
+                                            <td class="center">00010</td>
+                                            <td class="center">R$ <span>10.000,00</span></td>
+                                            <td class="center">Finalizado</td>
+                                            <td class="text-center">
+                                                <a href="confirmaEmissoes.html">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td class="center">
+                                                <div class="product product-calc">Calculado</div>
+                                            </td>
+                                            <td class="center">José Souza</td>
+                                            <td class="center">42.215.372/0001-85</td>
+                                            <td class="center">20/11/2022</td>
+                                            <td class="center">00009</td>
+                                            <td class="center">R$ <span>5.000,00</span></td>
+                                            <td class="center">Analise</td>
+                                            <td class="text-center">
+                                                <a href="proposta.html">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr class="finalizado">
+                                            <td class="center">
+                                                <div class="product product-global">Global</div>
+                                            </td>
+                                            <td class="center">Rosa Santos</td>
+                                            <td class="center">52.792.372/0001-47</td>
+                                            <td class="center">18/11/2022</td>
+                                            <td class="center">00008</td>
+                                            <td class="center">R$ <span>9.000,00</span></td>
+                                            <td class="center">Finalizado</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr class="restricao">
+                                            <td class="center">
+                                                <div class="product product-global">Global</div>
+                                            </td>
+                                            <td class="center">Mario Ramos</td>
+                                            <td class="center">42.217.327/0001-47</td>
+                                            <td class="center">11/11/2022</td>
+                                            <td class="center">00007</td>
+                                            <td class="center">R$ <span>3.000,00</span></td>
+                                            <td class="center">Restrição</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr class="restricao">
+                                            <td class="center">
+                                                <div class="product product-calc">Calculado</div>
+                                            </td>
+                                            <td class="center">Vilma Martins</td>
+                                            <td class="center">51.276.327/0001-76</td>
+                                            <td class="center">11/11/2022</td>
+                                            <td class="center">00006</td>
+                                            <td class="center">R$ <span>1.000,00</span></td>
+                                            <td class="center">Restrição</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr class="finalizado">
+                                            <td class="center">
+                                                <div class="product product-global">Global</div>
+                                            </td>
+                                            <td class="center">Vilma Martins</td>
+                                            <td class="center">51.276.327/0001-76</td>
+                                            <td class="center">11/11/2022</td>
+                                            <td class="center">00005</td>
+                                            <td class="center">R$ <span>1.000,00</span></td>
+                                            <td class="center">Finalizado</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr class="finalizado">
+                                            <td class="center">
+                                                <div class="product product-global">Global</div>
+                                            </td>
+                                            <td class="center">Bruna Souza</td>
+                                            <td class="center">34.276.327/0001-74</td>
+                                            <td class="center">26/10/2022</td>
+                                            <td class="center">00004</td>
+                                            <td class="center">R$ <span>2.000,00</span></td>
+                                            <td class="center">Finalizado</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="center">
+                                                <div class="product product-calc">Calculado</div>
+                                            </td>
+                                            <td class="center">Guilherme Viana</td>
+                                            <td class="center">27.376.387/0001-35</td>
+                                            <td class="center">24/10/2022</td>
+                                            <td class="center">00003</td>
+                                            <td class="center">R$ <span>7.000,00</span></td>
+                                            <td class="center">Prenchimento</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td class="center">
+                                                <div class="product product-global">Global</div>
+                                            </td>
+                                            <td class="center">Ricardo Bento</td>
+                                            <td class="center">38.896.427/0001-73</td>
+                                            <td class="center">10/10/2022</td>
+                                            <td class="center">00002</td>
+                                            <td class="center">R$ <span>10.000,00</span></td>
+                                            <td class="center">Preenchimento</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr class="restricao">
+                                            <td class="center">
+                                                <div class="product product-global">Global</div>
+                                            </td>
+                                            <td class="center">Jonatan Silva</td>
+                                            <td class="center">29.566.327/0001-73</td>
+                                            <td class="center">11/11/2022</td>
+                                            <td class="center">00001</td>
+                                            <td class="center">R$ <span>1.000,00</span></td>
+                                            <td class="center">Restrição</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td class="center">
+                                                <div class="product product-global">Global</div>
+                                            </td>
+                                            <td class="center">Manoel Silva</td>
+                                            <td class="center">69.376.327/0001-74</td>
+                                            <td class="center">11/11/2022</td>
+                                            <td class="center">00011</td>
+                                            <td class="center">R$ <span>1.000,00</span></td>
+                                            <td class="center">Análise</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td class="center">
+                                                <div class="product product-calc">Calculado</div>
+                                            </td>
+                                            <td class="center">Manoel Silva</td>
+                                            <td class="center">69.376.327/0001-74</td>
+                                            <td class="center">11/11/2022</td>
+                                            <td class="center">00012</td>
+                                            <td class="center">R$ <span>1.000,00</span></td>
+                                            <td class="center">Preenchimento</td>
+                                            <td class="text-center">
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div><!--table-responsive-->
+                        
+                        
+                    </div>
+                    
+                </div><!--row--> 
+                <div class="row mt-3 mb-5">
+                    <div class="col-md-4 ">
+                        <a href="javascript:history.go(-1)" class="pull-left btn btn-gray btn-block btn-icon">
+                            <div class="icon-button mr-2">
+                                <i class=" flip fa fa-play"></i>
+                            </div>
+                            voltar
+                        </a>
+                    </div>
+                </div><!--row-->           
+            </div><!--Main-->
+
+            <div class="footer">
+                <div class="brand-footer">
+                    <img src="Assets/img/brand/Logo_Diretrix_Footer.png" alt="logo DiretrixOn" class="img-fluid">
+                </div><!--brand-footer-->
+                <div class="text-footer">
+                    <p>Todos os direitos reservados © 2022 Diretrix.On</p>
+                </div><!--text-footer-->
+            </div><!--footer-->
+        </div><!--wrapper-content-->
+    </div><!--wrapper-->
+
+    <script   src="https://code.jquery.com/jquery-3.6.3.min.js"   integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="   crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    
+    <!-- scripts page -->
+    <script src="Assets/js/main.js"></script>
+    <script src="Assets/js/listaPendecias.js"></script>
+</body>
+</html>
