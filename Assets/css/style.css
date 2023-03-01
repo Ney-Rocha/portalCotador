@@ -445,7 +445,10 @@ ul{
     margin-right: 15px;
     color:#fff;
 }
-
+.brand_login{
+    width: 150px;
+    max-height: 70px;
+}
 a.brand-icon-profile:hover{
     color:#fff;
 }
