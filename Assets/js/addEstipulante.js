@@ -33,12 +33,12 @@ $(document).ready(function(){
                 '</div><!--col-->' +
                 '<div class="col-md-12">' +
                 '<div class="card-title-button mt-2 mr-2">' +
-                '<button id="button_'+ numSubestipulantes +'" type="submit" class="btn">' +
-                '<div class="text-warning mr-2">' +
-                '<i class="fas fa-check"></i>' +
-                '</div>' +
-                'Salvar' +
-                '</button>' +
+                // '<button id="button_'+ numSubestipulantes +'" type="submit" class="btn">' +
+                // '<div class="text-warning mr-2">' +
+                // '<i class="fas fa-check"></i>' +
+                // '</div>' +
+                // 'Salvar' +
+                // '</button>' +
                 '<button type="reset">' +
                 '<div class="text-warning mr-2">' +
                 '<i class="fas fa-eraser"></i>' +
@@ -81,12 +81,24 @@ $(document).ready(function(){
                 contentType: 'application/json',
                 success: function(result) {
                     loader.remove();
-                    if (result.status === 'OK') {                       
-                        swal.fire("CNPJ válido!", "", "success");
-                        $(this).closest('.formulario').find('.form-group').each(function() {
-                            $(this).removeClass('group-danger');
-                          });
-                        
+                    if (result.status === 'OK') {
+                            if ($(this).closest('.formulario').find('.form-group').hasClass('group-danger')) {
+                                $(this).find('.form-group').removeClass('group-danger');
+                            }
+
+                            // Armazenando dados do CNPJ no Local Storage
+                            localStorage.setItem('cnpj', JSON.stringify(result));
+      
+                            // Recuperando dados do CNPJ do Local Storage
+                            const cnpjArmazenado = localStorage.getItem('cnpj');
+                            const cnpjRetorno = JSON.parse(cnpjArmazenado);
+                            // alert(cnpjRetorno.nome);
+                            // alert(cnpjRetorno.atividade_principal[0].text);
+                            // var formAtual = $(this).closest('.formulario')
+                            // formAtual.find('intup.id="razaoSocialSubestipulante_' + numSubestipulantes + '"').val("teste")
+                           
+                            swal.fire("CNPJ válido!", "", "success");
+                            
 
                     } else {
                         swal.fire("CNPJ inválido!", "", "error");
@@ -104,6 +116,50 @@ $(document).ready(function(){
             $(this).closest('.formulario').find('.form-group').addClass('group-danger');
         }
     });    
+
+    // $('#conteudo').on('blur', 'input.cnpj', function() {
+    //     const cnpj = $(this).val().replace(/[^0-9]/g, '');
+    //     if (cnpj.length !== 14) {
+    //       swal.fire("CNPJ inválido!", "", "error");
+    //       $(this).closest('.formulario').find('.form-group').addClass('group-danger');
+    //       return;
+    //     }
+      
+    //     const loader = $('<div>').addClass('loader');
+    //     $(this).after(loader);
+    //     const formGroupCnpj = $(this).closest('.form-group');
+    //     $.ajax({
+    //       url: 'https://www.receitaws.com.br/v1/cnpj/' + cnpj,
+    //       type: 'GET',
+    //       dataType: 'json',
+    //       contentType: 'application/json',
+    //       success: function(result) {
+    //         loader.remove();
+    //         if (result.status === 'OK') {
+    //           swal.fire("CNPJ válido!", "", "success");
+    //           $(this).closest('.formulario').find('.form-group').removeClass('group-danger');
+      
+    //           // Armazenando dados do CNPJ no Local Storage
+    //           localStorage.setItem('cnpj', JSON.stringify(result));
+      
+    //           // Recuperando dados do CNPJ do Local Storage
+    //           const cnpjArmazenado = localStorage.getItem('cnpj');
+    //           const cnpjRetorno = JSON.parse(cnpjArmazenado);
+      
+    //           console.log(cnpjRetorno.nome);
+    //           console.log(cnpjRetorno.atividade_principal[0].text);
+    //         } else {
+    //           swal.fire("CNPJ inválido!", "", "error");
+    //           $(this).closest('.formulario').find('.form-group').addClass('group-danger');
+    //         }
+    //       },
+    //       error: function(error) {
+    //         loader.remove();
+    //         swal.fire("Erro ao validar CNPJ!", "", "error");
+    //       }
+    //     });
+    //   });
+      
 
     $(document).on('click', '.deleteButton', function(){
         let sub = $(this).closest('.substruct');
