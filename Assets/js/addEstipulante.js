@@ -7,7 +7,7 @@ $(document).ready(function(){
     $('#addEst').on("click", function(){
             
         let subestipulante = '<div class="substruct mt-3" id="'+ numSubestipulantes +' ">' +
-                '<form action="#" id="formulario_'+ numSubestipulantes+ '">' +
+                '<form action="#" id="formulario_'+ numSubestipulantes+ '" class="formulario">' +
                 '<div class="card-title">' +
                 '<h4>Subestipulante' + ' '+ numSubestipulantes + '</h4>' +
                 '</div><!--card-title-->' +
@@ -22,13 +22,13 @@ $(document).ready(function(){
                 '<div class="col-lg-3">' +
                 '<div class="form-group">' +
                 '<label for="razaoSocialEstipulante" class="control-label label-strong label-primary"> Razão Social:</label>' +
-                '<input type="text"  value="XPTO LTDA" disabled id="razaoSocialEstipulante" class="form-control " required>' +
+                '<input type="text" name="razaoSocial"  disabled id="razaoSocialSubestipulante_' + numSubestipulantes + '" class="form-control " required>' +
                 '</div><!--form-group-->' +
                 '</div><!--col-->' +
                 '<div class="col-lg-6">' +
                 '<div class="form-group">' +
                 '<label for="segAtividadeEstipulante" class="control-label label-strong label-primary">Segmento:</label>' +
-                '<input type="text"  value="INDÚSTRIA" disabled id="segAtividadeEstipulante" class="form-control" required>' +
+                '<input type="text" name="segAtividade" disabled id="segAtividadesubestipulante_' + numSubestipulantes + '" class="form-control" required>' +
                 '</div><!--form-group-->' +
                 '</div><!--col-->' +
                 '<div class="col-md-12">' +
@@ -66,7 +66,44 @@ $(document).ready(function(){
 
     })
 
-        
+    $('#conteudo').on('blur', 'input.cnpj', function() {
+
+        var cnpj = $(this).val().replace(/[^0-9]/g, '');
+        if (cnpj.length === 14) {
+            var loader = $('<div>').addClass('loader');
+            $(this).after(loader);
+            var formGroupCnpj = $(this).closest('.form-group');
+            $.ajax({
+                url: 'https://www.receitaws.com.br/v1/cnpj/' + cnpj,
+                type: 'GET',
+                dataType: 'jsonp',
+                crossDomain: true,
+                contentType: 'application/json',
+                success: function(result) {
+                    loader.remove();
+                    if (result.status === 'OK') {                       
+                        swal.fire("CNPJ válido!", "", "success");
+                        $(this).closest('.formulario').find('.form-group').each(function() {
+                            $(this).removeClass('group-danger');
+                          });
+                        
+
+                    } else {
+                        swal.fire("CNPJ inválido!", "", "error");
+                        $(this).closest('.formulario').find('.form-group').addClass('group-danger');
+                        
+                    }
+                },
+                error: function(error) {
+                    loader.remove();
+                    swal.fire("Erro ao validar CNPJ!", "", "error");
+                }
+            });
+        }else{
+            swal.fire(" CNPJ invalido!", "", "error");
+            $(this).closest('.formulario').find('.form-group').addClass('group-danger');
+        }
+    });    
 
     $(document).on('click', '.deleteButton', function(){
         let sub = $(this).closest('.substruct');
